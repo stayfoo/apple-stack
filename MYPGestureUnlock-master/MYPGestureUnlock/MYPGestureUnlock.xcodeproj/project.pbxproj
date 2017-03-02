@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		188BEBBC1DC0672A0001A897 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188BEBBB1DC0672A0001A897 /* main.m */; };
+		188BEBBF1DC0672A0001A897 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188BEBBE1DC0672A0001A897 /* AppDelegate.m */; };
+		188BEBC21DC0672A0001A897 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188BEBC11DC0672A0001A897 /* ViewController.m */; };
+		188BEBC51DC0672A0001A897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188BEBC31DC0672A0001A897 /* Main.storyboard */; };
+		188BEBC71DC0672A0001A897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188BEBC61DC0672A0001A897 /* Assets.xcassets */; };
+		188BEBCA1DC0672A0001A897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188BEBC81DC0672A0001A897 /* LaunchScreen.storyboard */; };
+		188BEBD51DC0672A0001A897 /* MYPGestureUnlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 188BEBD41DC0672A0001A897 /* MYPGestureUnlockTests.m */; };
+		188BEBE01DC0672A0001A897 /* MYPGestureUnlockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 188BEBDF1DC0672A0001A897 /* MYPGestureUnlockUITests.m */; };
+		188BEBF01DC0678E0001A897 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188BEBEF1DC0678E0001A897 /* CircleView.m */; };
+		188BEBF31DC068670001A897 /* LockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188BEBF21DC068670001A897 /* LockView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		188BEBD11DC0672A0001A897 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188BEBAF1DC0672A0001A897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188BEBB61DC0672A0001A897;
+			remoteInfo = MYPGestureUnlock;
+		};
+		188BEBDC1DC0672A0001A897 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188BEBAF1DC0672A0001A897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188BEBB61DC0672A0001A897;
+			remoteInfo = MYPGestureUnlock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		188BEBB71DC0672A0001A897 /* MYPGestureUnlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYPGestureUnlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188BEBBB1DC0672A0001A897 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		188BEBBD1DC0672A0001A897 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		188BEBBE1DC0672A0001A897 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		188BEBC01DC0672A0001A897 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		188BEBC11DC0672A0001A897 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		188BEBC41DC0672A0001A897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		188BEBC61DC0672A0001A897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		188BEBC91DC0672A0001A897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		188BEBCB1DC0672A0001A897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188BEBD01DC0672A0001A897 /* MYPGestureUnlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYPGestureUnlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188BEBD41DC0672A0001A897 /* MYPGestureUnlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPGestureUnlockTests.m; sourceTree = "<group>"; };
+		188BEBD61DC0672A0001A897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188BEBDB1DC0672A0001A897 /* MYPGestureUnlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYPGestureUnlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188BEBDF1DC0672A0001A897 /* MYPGestureUnlockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPGestureUnlockUITests.m; sourceTree = "<group>"; };
+		188BEBE11DC0672A0001A897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188BEBEE1DC0678E0001A897 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		188BEBEF1DC0678E0001A897 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		188BEBF11DC068670001A897 /* LockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockView.h; sourceTree = "<group>"; };
+		188BEBF21DC068670001A897 /* LockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		188BEBB41DC0672A0001A897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BEBCD1DC0672A0001A897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BEBD81DC0672A0001A897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		188BEBAE1DC0672A0001A897 = {
+			isa = PBXGroup;
+			children = (
+				188BEBB91DC0672A0001A897 /* MYPGestureUnlock */,
+				188BEBD31DC0672A0001A897 /* MYPGestureUnlockTests */,
+				188BEBDE1DC0672A0001A897 /* MYPGestureUnlockUITests */,
+				188BEBB81DC0672A0001A897 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		188BEBB81DC0672A0001A897 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				188BEBB71DC0672A0001A897 /* MYPGestureUnlock.app */,
+				188BEBD01DC0672A0001A897 /* MYPGestureUnlockTests.xctest */,
+				188BEBDB1DC0672A0001A897 /* MYPGestureUnlockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		188BEBB91DC0672A0001A897 /* MYPGestureUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				188BEBED1DC067340001A897 /* GestureUnlock */,
+				188BEBBD1DC0672A0001A897 /* AppDelegate.h */,
+				188BEBBE1DC0672A0001A897 /* AppDelegate.m */,
+				188BEBC01DC0672A0001A897 /* ViewController.h */,
+				188BEBC11DC0672A0001A897 /* ViewController.m */,
+				188BEBC31DC0672A0001A897 /* Main.storyboard */,
+				188BEBC61DC0672A0001A897 /* Assets.xcassets */,
+				188BEBC81DC0672A0001A897 /* LaunchScreen.storyboard */,
+				188BEBCB1DC0672A0001A897 /* Info.plist */,
+				188BEBBA1DC0672A0001A897 /* Supporting Files */,
+			);
+			path = MYPGestureUnlock;
+			sourceTree = "<group>";
+		};
+		188BEBBA1DC0672A0001A897 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				188BEBBB1DC0672A0001A897 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		188BEBD31DC0672A0001A897 /* MYPGestureUnlockTests */ = {
+			isa = PBXGroup;
+			children = (
+				188BEBD41DC0672A0001A897 /* MYPGestureUnlockTests.m */,
+				188BEBD61DC0672A0001A897 /* Info.plist */,
+			);
+			path = MYPGestureUnlockTests;
+			sourceTree = "<group>";
+		};
+		188BEBDE1DC0672A0001A897 /* MYPGestureUnlockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				188BEBDF1DC0672A0001A897 /* MYPGestureUnlockUITests.m */,
+				188BEBE11DC0672A0001A897 /* Info.plist */,
+			);
+			path = MYPGestureUnlockUITests;
+			sourceTree = "<group>";
+		};
+		188BEBED1DC067340001A897 /* GestureUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				188BEBF11DC068670001A897 /* LockView.h */,
+				188BEBF21DC068670001A897 /* LockView.m */,
+				188BEBEE1DC0678E0001A897 /* CircleView.h */,
+				188BEBEF1DC0678E0001A897 /* CircleView.m */,
+			);
+			path = GestureUnlock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		188BEBB61DC0672A0001A897 /* MYPGestureUnlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188BEBE41DC0672A0001A897 /* Build configuration list for PBXNativeTarget "MYPGestureUnlock" */;
+			buildPhases = (
+				188BEBB31DC0672A0001A897 /* Sources */,
+				188BEBB41DC0672A0001A897 /* Frameworks */,
+				188BEBB51DC0672A0001A897 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MYPGestureUnlock;
+			productName = MYPGestureUnlock;
+			productReference = 188BEBB71DC0672A0001A897 /* MYPGestureUnlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		188BEBCF1DC0672A0001A897 /* MYPGestureUnlockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188BEBE71DC0672A0001A897 /* Build configuration list for PBXNativeTarget "MYPGestureUnlockTests" */;
+			buildPhases = (
+				188BEBCC1DC0672A0001A897 /* Sources */,
+				188BEBCD1DC0672A0001A897 /* Frameworks */,
+				188BEBCE1DC0672A0001A897 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188BEBD21DC0672A0001A897 /* PBXTargetDependency */,
+			);
+			name = MYPGestureUnlockTests;
+			productName = MYPGestureUnlockTests;
+			productReference = 188BEBD01DC0672A0001A897 /* MYPGestureUnlockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		188BEBDA1DC0672A0001A897 /* MYPGestureUnlockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188BEBEA1DC0672A0001A897 /* Build configuration list for PBXNativeTarget "MYPGestureUnlockUITests" */;
+			buildPhases = (
+				188BEBD71DC0672A0001A897 /* Sources */,
+				188BEBD81DC0672A0001A897 /* Frameworks */,
+				188BEBD91DC0672A0001A897 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188BEBDD1DC0672A0001A897 /* PBXTargetDependency */,
+			);
+			name = MYPGestureUnlockUITests;
+			productName = MYPGestureUnlockUITests;
+			productReference = 188BEBDB1DC0672A0001A897 /* MYPGestureUnlockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		188BEBAF1DC0672A0001A897 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = MengYP;
+				TargetAttributes = {
+					188BEBB61DC0672A0001A897 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTHT7N29E5;
+						ProvisioningStyle = Automatic;
+					};
+					188BEBCF1DC0672A0001A897 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTHT7N29E5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 188BEBB61DC0672A0001A897;
+					};
+					188BEBDA1DC0672A0001A897 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTHT7N29E5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 188BEBB61DC0672A0001A897;
+					};
+				};
+			};
+			buildConfigurationList = 188BEBB21DC0672A0001A897 /* Build configuration list for PBXProject "MYPGestureUnlock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 188BEBAE1DC0672A0001A897;
+			productRefGroup = 188BEBB81DC0672A0001A897 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				188BEBB61DC0672A0001A897 /* MYPGestureUnlock */,
+				188BEBCF1DC0672A0001A897 /* MYPGestureUnlockTests */,
+				188BEBDA1DC0672A0001A897 /* MYPGestureUnlockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188BEBB51DC0672A0001A897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188BEBCA1DC0672A0001A897 /* LaunchScreen.storyboard in Resources */,
+				188BEBC71DC0672A0001A897 /* Assets.xcassets in Resources */,
+				188BEBC51DC0672A0001A897 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BEBCE1DC0672A0001A897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BEBD91DC0672A0001A897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		188BEBB31DC0672A0001A897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188BEBF01DC0678E0001A897 /* CircleView.m in Sources */,
+				188BEBF31DC068670001A897 /* LockView.m in Sources */,
+				188BEBC21DC0672A0001A897 /* ViewController.m in Sources */,
+				188BEBBF1DC0672A0001A897 /* AppDelegate.m in Sources */,
+				188BEBBC1DC0672A0001A897 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BEBCC1DC0672A0001A897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188BEBD51DC0672A0001A897 /* MYPGestureUnlockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BEBD71DC0672A0001A897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188BEBE01DC0672A0001A897 /* MYPGestureUnlockUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		188BEBD21DC0672A0001A897 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188BEBB61DC0672A0001A897 /* MYPGestureUnlock */;
+			targetProxy = 188BEBD11DC0672A0001A897 /* PBXContainerItemProxy */;
+		};
+		188BEBDD1DC0672A0001A897 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188BEBB61DC0672A0001A897 /* MYPGestureUnlock */;
+			targetProxy = 188BEBDC1DC0672A0001A897 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		188BEBC31DC0672A0001A897 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188BEBC41DC0672A0001A897 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		188BEBC81DC0672A0001A897 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188BEBC91DC0672A0001A897 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		188BEBE21DC0672A0001A897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		188BEBE31DC0672A0001A897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		188BEBE51DC0672A0001A897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = MYPGestureUnlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengyueping.www.MYPGestureUnlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		188BEBE61DC0672A0001A897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = MYPGestureUnlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengyueping.www.MYPGestureUnlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		188BEBE81DC0672A0001A897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = MYPGestureUnlockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengyueping.www.MYPGestureUnlockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYPGestureUnlock.app/MYPGestureUnlock";
+			};
+			name = Debug;
+		};
+		188BEBE91DC0672A0001A897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = MYPGestureUnlockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengyueping.www.MYPGestureUnlockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYPGestureUnlock.app/MYPGestureUnlock";
+			};
+			name = Release;
+		};
+		188BEBEB1DC0672A0001A897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = MYPGestureUnlockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengyueping.www.MYPGestureUnlockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MYPGestureUnlock;
+			};
+			name = Debug;
+		};
+		188BEBEC1DC0672A0001A897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = MYPGestureUnlockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengyueping.www.MYPGestureUnlockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MYPGestureUnlock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188BEBB21DC0672A0001A897 /* Build configuration list for PBXProject "MYPGestureUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188BEBE21DC0672A0001A897 /* Debug */,
+				188BEBE31DC0672A0001A897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188BEBE41DC0672A0001A897 /* Build configuration list for PBXNativeTarget "MYPGestureUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188BEBE51DC0672A0001A897 /* Debug */,
+				188BEBE61DC0672A0001A897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		188BEBE71DC0672A0001A897 /* Build configuration list for PBXNativeTarget "MYPGestureUnlockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188BEBE81DC0672A0001A897 /* Debug */,
+				188BEBE91DC0672A0001A897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		188BEBEA1DC0672A0001A897 /* Build configuration list for PBXNativeTarget "MYPGestureUnlockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188BEBEB1DC0672A0001A897 /* Debug */,
+				188BEBEC1DC0672A0001A897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 188BEBAF1DC0672A0001A897 /* Project object */;
+}
