@@ -1,0 +1,42 @@
+//
+//  Prefix.pch
+//
+//  Created by MengYP on 15/9/22.
+//  Copyright (c) 2015年 MengYP. All rights reserved.
+//
+
+#ifndef _4_____________Prefix_pch
+#define _4_____________Prefix_pch
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+MYPFrame.h"
+
+
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:arc4random_uniform(256)/255.0]
+#define kColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define kGlobalQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define kMainQueue dispatch_get_main_queue()
+
+#define kImageFile(url) [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:[url lastPathComponent]]
+
+#define kFontSize [UIFont systemFontOfSize:15]
+
+
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kScreenSize [UIScreen mainScreen].bounds.size
+#define kScreenBounds [UIScreen mainScreen].bounds
+
+
+
+#ifdef DEBUG
+#define kLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt),__FILE__,__FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define kLog(...);
+#endif
+
+#endif
+#endif
