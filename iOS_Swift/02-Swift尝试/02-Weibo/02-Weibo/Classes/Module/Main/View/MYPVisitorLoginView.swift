@@ -5,8 +5,9 @@
 //  Created by apple on 2017/5/23.
 //  Copyright © 2017年 MengYP. All rights reserved.
 //
-
-/// 访客视图
+/*
+ 访客视图
+ */
 
 /*
  VFL 自动布局
@@ -32,8 +33,44 @@
 
 import UIKit
 
-class MYPVisitorLoginView: UIView {
 
+/*
+ optional 是OC中关键字,所以使用 @objc optional 就要使用 @objc protocol
+ */
+@objc protocol MYPVisitorLoginViewDelegate: NSObjectProtocol {
+    
+    /// 登录（可选）
+    @objc optional func userWillLogin()
+    
+    /// 注册
+    func userWillRegister()
+}
+
+class MYPVisitorLoginView: UIView {
+// MARK: - 接口
+    
+    /// 设置访客视图信息
+    ///
+    /// - Parameters:
+    ///   - tipText:    提示文案
+    ///   - imageName:  提示的对应图片
+    func setWithInfo(_ tipText: String, imageName: String?) {
+        tipLabel.text = tipText
+        
+        if let name = imageName {
+            circleView.image = UIImage(named: name)
+            houseView.isHidden = true
+            bringSubview(toFront: circleView) // 将圆环视图,放到最顶层
+        } else {
+            startAnimation() //首页圆环视图,添加动画效果
+        }
+    }
+    
+// MARK: - 属性
+    //Swift中,所有的属性默认都是strong
+    weak var visitorViewDelegate: MYPVisitorLoginViewDelegate?
+    
+    
 // MARK: - 初始化
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -102,7 +139,29 @@ class MYPVisitorLoginView: UIView {
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[maskView]-(-35)-[regBtn]", options: [], metrics: nil, views: ["maskView": backView, "regBtn": registerBtn]))
     }
     
+    /// 开启动画
+    fileprivate func startAnimation() {
+        let anim = CABasicAnimation(keyPath: "transform.rotation")
+        anim.repeatCount = MAXFLOAT
+        anim.duration = 20.0
+        anim.toValue = 2 * M_PI
+        anim.isRemovedOnCompletion = false //完成动画 & 当视图处于非活跃状态时,将动画移除图层。
+        
+        circleView.layer.add(anim, forKey: nil) //添加动画
+    }
 
+// MARK: - 事件监听
+    @objc fileprivate func loginDidClick() {
+        /*
+         visitorViewDelegate? 判断协议代理是否是实现
+         userWillLogin?()   判断方法是否实现. 如果实现,执行方法; 如果没有实现,就不执行.
+         */
+        visitorViewDelegate?.userWillLogin?()  // 通知协议代理
+    }
+    
+    @objc fileprivate func registerDidClick() {
+        visitorViewDelegate?.userWillRegister() // 通知协议代理
+    }
     
 // MARK: - 懒加载
     
@@ -138,6 +197,7 @@ class MYPVisitorLoginView: UIView {
         btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), for: UIControlState())
         btn.setTitleColor(UIColor.darkGray, for: UIControlState())
         btn.sizeToFit()
+        btn.addTarget(self, action: #selector(MYPVisitorLoginView.loginDidClick), for: UIControlEvents.touchUpInside)
         
         return btn
     }()
@@ -150,6 +210,7 @@ class MYPVisitorLoginView: UIView {
         btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), for: UIControlState())
         btn.setTitleColor(UIColor.orange, for: UIControlState())
         btn.sizeToFit()
+        btn.addTarget(self, action: #selector(MYPVisitorLoginView.registerDidClick), for: UIControlEvents.touchUpInside)
         
         return btn
     }()

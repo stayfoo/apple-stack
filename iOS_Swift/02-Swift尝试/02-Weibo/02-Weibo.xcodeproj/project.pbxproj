@@ -14,14 +14,18 @@
 		18595E621ED33BEA00F38E2F /* MYPMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E611ED33BEA00F38E2F /* MYPMessageController.swift */; };
 		18595E641ED33C3F00F38E2F /* MYPBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E631ED33C3F00F38E2F /* MYPBaseController.swift */; };
 		18595E661ED33C9500F38E2F /* MYPHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E651ED33C9500F38E2F /* MYPHomeController.swift */; };
-		18595E681ED33DF100F38E2F /* Comman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E671ED33DF100F38E2F /* Comman.swift */; };
+		18595E681ED33DF100F38E2F /* MYPComman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E671ED33DF100F38E2F /* MYPComman.swift */; };
 		18595E6A1ED3401900F38E2F /* MYPMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E691ED3401900F38E2F /* MYPMainController.swift */; };
 		18595E6D1ED3463000F38E2F /* MYPMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E6C1ED3463000F38E2F /* MYPMainTabBar.swift */; };
 		18595E701ED3D1A600F38E2F /* MYPOAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E6F1ED3D1A600F38E2F /* MYPOAuthController.swift */; };
 		18595E721ED3D48700F38E2F /* MYPVisitorLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E711ED3D48700F38E2F /* MYPVisitorLoginView.swift */; };
+		18595E9F1ED42F0700F38E2F /* MYPUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E9E1ED42F0700F38E2F /* MYPUserAccount.swift */; };
+		18595EA11ED433B700F38E2F /* MYPNetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595EA01ED433B700F38E2F /* MYPNetWorking.swift */; };
+		CB7F694F9FBE967505F4E509 /* Pods_02_Weibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C054F14E71B7B6B53D64277B /* Pods_02_Weibo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		078E95D391615DE02CE67A48 /* Pods-02-Weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02-Weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-02-Weibo/Pods-02-Weibo.debug.xcconfig"; sourceTree = "<group>"; };
 		18595E401ED2E78500F38E2F /* 02-Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-Weibo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18595E431ED2E78500F38E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18595E4A1ED2E78500F38E2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,11 +35,15 @@
 		18595E611ED33BEA00F38E2F /* MYPMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPMessageController.swift; sourceTree = "<group>"; };
 		18595E631ED33C3F00F38E2F /* MYPBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPBaseController.swift; sourceTree = "<group>"; };
 		18595E651ED33C9500F38E2F /* MYPHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPHomeController.swift; sourceTree = "<group>"; };
-		18595E671ED33DF100F38E2F /* Comman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comman.swift; sourceTree = "<group>"; };
+		18595E671ED33DF100F38E2F /* MYPComman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPComman.swift; sourceTree = "<group>"; };
 		18595E691ED3401900F38E2F /* MYPMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPMainController.swift; sourceTree = "<group>"; };
 		18595E6C1ED3463000F38E2F /* MYPMainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPMainTabBar.swift; sourceTree = "<group>"; };
 		18595E6F1ED3D1A600F38E2F /* MYPOAuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPOAuthController.swift; sourceTree = "<group>"; };
 		18595E711ED3D48700F38E2F /* MYPVisitorLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPVisitorLoginView.swift; sourceTree = "<group>"; };
+		18595E9E1ED42F0700F38E2F /* MYPUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPUserAccount.swift; sourceTree = "<group>"; };
+		18595EA01ED433B700F38E2F /* MYPNetWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPNetWorking.swift; sourceTree = "<group>"; };
+		A2DC30CB022F91590D868F8C /* Pods-02-Weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02-Weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-02-Weibo/Pods-02-Weibo.release.xcconfig"; sourceTree = "<group>"; };
+		C054F14E71B7B6B53D64277B /* Pods_02_Weibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_02_Weibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7F694F9FBE967505F4E509 /* Pods_02_Weibo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DC3E15233B69EFE4A3DA11F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C054F14E71B7B6B53D64277B /* Pods_02_Weibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18595E371ED2E78500F38E2F = {
 			isa = PBXGroup;
 			children = (
 				18595E421ED2E78500F38E2F /* 02-Weibo */,
 				18595E411ED2E78500F38E2F /* Products */,
+				74BEF42C453639DBA8E4EFE7 /* Pods */,
+				0DC3E15233B69EFE4A3DA11F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +98,8 @@
 		18595E551ED2E7D500F38E2F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18595E741ED41EAC00F38E2F /* Lib */,
+				18595E9D1ED4202100F38E2F /* Model */,
 				18595E571ED2E88A00F38E2F /* Tools */,
 				18595E561ED2E86400F38E2F /* Module */,
 			);
@@ -100,7 +121,8 @@
 		18595E571ED2E88A00F38E2F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				18595E671ED33DF100F38E2F /* Comman.swift */,
+				18595E671ED33DF100F38E2F /* MYPComman.swift */,
+				18595EA01ED433B700F38E2F /* MYPNetWorking.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -165,6 +187,30 @@
 			path = OAuth;
 			sourceTree = "<group>";
 		};
+		18595E741ED41EAC00F38E2F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		18595E9D1ED4202100F38E2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18595E9E1ED42F0700F38E2F /* MYPUserAccount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74BEF42C453639DBA8E4EFE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				078E95D391615DE02CE67A48 /* Pods-02-Weibo.debug.xcconfig */,
+				A2DC30CB022F91590D868F8C /* Pods-02-Weibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18595E521ED2E78500F38E2F /* Build configuration list for PBXNativeTarget "02-Weibo" */;
 			buildPhases = (
+				0123E95BE4F869983316CD7E /* [CP] Check Pods Manifest.lock */,
 				18595E3C1ED2E78500F38E2F /* Sources */,
 				18595E3D1ED2E78500F38E2F /* Frameworks */,
 				18595E3E1ED2E78500F38E2F /* Resources */,
+				5942985AC2DF1B2AB326B220 /* [CP] Embed Pods Frameworks */,
+				A79E32A4E20B9192AE204DB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +281,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0123E95BE4F869983316CD7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5942985AC2DF1B2AB326B220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-02-Weibo/Pods-02-Weibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A79E32A4E20B9192AE204DB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-02-Weibo/Pods-02-Weibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18595E3C1ED2E78500F38E2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -239,7 +336,8 @@
 			files = (
 				18595E721ED3D48700F38E2F /* MYPVisitorLoginView.swift in Sources */,
 				18595E6D1ED3463000F38E2F /* MYPMainTabBar.swift in Sources */,
-				18595E681ED33DF100F38E2F /* Comman.swift in Sources */,
+				18595EA11ED433B700F38E2F /* MYPNetWorking.swift in Sources */,
+				18595E681ED33DF100F38E2F /* MYPComman.swift in Sources */,
 				18595E6A1ED3401900F38E2F /* MYPMainController.swift in Sources */,
 				18595E621ED33BEA00F38E2F /* MYPMessageController.swift in Sources */,
 				18595E5E1ED33BB600F38E2F /* MYPProfileController.swift in Sources */,
@@ -248,6 +346,7 @@
 				18595E601ED33BD400F38E2F /* MYPDiscoverController.swift in Sources */,
 				18595E701ED3D1A600F38E2F /* MYPOAuthController.swift in Sources */,
 				18595E661ED33C9500F38E2F /* MYPHomeController.swift in Sources */,
+				18595E9F1ED42F0700F38E2F /* MYPUserAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,10 +446,12 @@
 		};
 		18595E531ED2E78500F38E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 078E95D391615DE02CE67A48 /* Pods-02-Weibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U66QWACWTN;
 				INFOPLIST_FILE = "02-Weibo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.-2-Weibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,10 +461,12 @@
 		};
 		18595E541ED2E78500F38E2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2DC30CB022F91590D868F8C /* Pods-02-Weibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U66QWACWTN;
 				INFOPLIST_FILE = "02-Weibo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.-2-Weibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +493,7 @@
 				18595E541ED2E78500F38E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,12 +6,18 @@
 //  Copyright © 2017年 MengYP. All rights reserved.
 //
 
+/*
+ 控制器基类
+ */
+
 import UIKit
 
-class MYPBaseController: UITableViewController {
+// 多继承
+class MYPBaseController: UITableViewController,MYPVisitorLoginViewDelegate {
 
-    var userLogin = false
-    
+// MARK: - 属性
+    var userLogin = false //标记用户是否登录 true:已登录
+    var visitorLoginView: MYPVisitorLoginView?  // 访客视图属性
     
 // MARK: - 初始化
     
@@ -22,6 +28,7 @@ class MYPBaseController: UITableViewController {
      在 loadView 方法,会自动检测根视图是否为空,如果为空会自动调用 loadView
      */
     override func loadView() {
+        // 选择加载视图
         userLogin ? super.loadView() : setupVisitorView()
     }
     
@@ -40,67 +47,35 @@ class MYPBaseController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-// MARK: - 代理 Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 // MARK: - 私有方法
     
     /// 自定义访客视图
     fileprivate func setupVisitorView() {
-        let vistorView = MYPVisitorLoginView()
-        view = vistorView
+        
+        visitorLoginView = MYPVisitorLoginView()
+        visitorLoginView?.visitorViewDelegate = self
+        view = visitorLoginView
+        
+        
+        // Use of string literal for Objective-C selectors is deprecated; use '#selector' instead
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录", style: UIBarButtonItemStyle.plain, target: self, action: #selector(MYPBaseController.userWillLogin))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.done, target: self, action: #selector(MYPBaseController.userWillRegister))
+        
+        
+    }
+    
+// MARK: - 事件监听 & 代理方法
+    @objc internal func userWillRegister() {
+        print(#function)
+    }
+    @objc internal func userWillLogin() {
+        print(#function)
+        
+        let oauthVC = MYPOAuthController()
+        let navVC = UINavigationController(rootViewController: oauthVC)
+        present(navVC, animated: true, completion: nil)
     }
 }
+
+
+
