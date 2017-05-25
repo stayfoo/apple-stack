@@ -17,7 +17,7 @@ class MYPOAuthController: UIViewController {
     let webView = UIWebView()
     
     
-// MARK: - 初始化
+// MARK: - 生命周期
     override func loadView() {
         view = webView
         webView.delegate = self
@@ -37,18 +37,21 @@ class MYPOAuthController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    deinit {
+        print("deinit----OAuthVC--")
+    }
+    
 // MARK: - 私有方法
     
     /// 加载OAuth授权网页
     fileprivate func loadOAuthPage() {
         
-        let urlString = "\(k_oauth_url)?client_id=\(k_client_id)&redirect_uri=\(k_redirect_uri)"
+        let urlString = "\(k_oauth_url)?client_id=\(k_appKey)&redirect_uri=\(k_appRedirectURI)"
         
         if let url = URL(string: urlString) {
             let request = URLRequest(url: url)
             webView.loadRequest(request)
         }
-        
     }
     
 // MARK: - 事件监听
@@ -63,7 +66,7 @@ class MYPOAuthController: UIViewController {
         print(#function)
         
         // 与js通讯
-        let jsString = "document.getElementById('userId').value = '18399226929', document.getElementById('passwd').value = 'w123456' "
+        let jsString = "document.getElementById('userId').value = '1134471523@qq.com', document.getElementById('passwd').value = 'MENG123456' "
         webView.stringByEvaluatingJavaScript(from: jsString)
     }
 }
@@ -81,29 +84,39 @@ extension MYPOAuthController: UIWebViewDelegate {
         print("HUD 关闭")
     }
     
-    ///
-    ///
-    /// - Parameters:
-    /// - Returns: true 持有协议的对象,可以正常工作; 否则就不行;
+    /*
+     * - Returns: true 持有协议的对象,可以正常工作; 否则就不行;
+     */
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
     
         //js 调用本地代码
         let urlString = request.url?.absoluteString ?? ""
         
-        if urlString.hasPrefix("https://api.weibo.com/") {
+        if urlString.hasPrefix(k_api_url) {   // 判断api地址
             return true
+        }
+        //"http://www.mengyueping.com/?code=e51042938e74024155edd2c1e9246aca"
+        if !urlString.hasPrefix(k_appRedirectURI) { // 判断回调地址
+            return false
         }
         
         guard let query = request.url?.query else {
             //获取不到参数列表
             return false
         }
-        
+        //"code=a315878e143817c8fc585f2d6c637b41"
         let codeStr = "code="
         let code = query.substring(from: codeStr.endIndex) //获取code码
         
         //请求用户 token
-        loadAccessToken(code)
+        MYPUserAccountViewModel().loadAccessToken(code)
+        
+        self.dismiss(animated: false) { () -> Void in
+            //发出切换页面通知
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: k_switchRootVCNotification), object: "Welcome")
+            
+            print("come here")
+        }
         
         return false
     }
@@ -112,70 +125,7 @@ extension MYPOAuthController: UIWebViewDelegate {
         
     }
     
-// MARK: - 网络请求
-    
-    /// 获取用户信息
-    ///
-    /// - Parameter account: 用户模型
-    fileprivate func loadUserInfo(_ account: MYPUserAccount) {
-        let urlString = "https://api.weibo.com/2/users/show.json"
-        
-        guard let access_token = account.access_token, let userId = account.uid else {
-            print("获取网络数据失败,请稍后再试")
-            return
-        }
-        
-        let parameters = ["access_token": access_token, "uid": userId]
-        
-        MYPNetWorking.sharedManager.get(urlString, parameters) { response, result in
-            
-            if let response = response {
-                print("response: \(response) -- result: \(result)")
-            }
-            
-//            account.avatar_large = result["avatar_large"] as? String
-//            account.name = result["name"] as? String
-        }
-    }
-    
-    /// 获取token
-    ///
-    /// - Parameter code: code 码
-    fileprivate func loadAccessToken(_ code: String) {
-        let urlString = "https://api.weibo.com/oauth2/access_token"
-        let params = ["client_id": k_client_id,
-                      "client_secret" : k_client_secret,
-                      "grant_type":"authorization_code",
-                      "code":code,
-                      "redirect_uri":k_redirect_uri]
-        
-        MYPNetWorking.sharedManager.get(urlString, params) { response, result in
-            print("response: \(response) -- result: \(result)")
-            
-            //拿到用户token之后 立即请求用户信息
-//            guard let dict = result as? [String: AnyObject] else {
-//                return
-//            }
-//            let account = UserAccount(dict: dict)
-            //加载用户信息
-//            self.loadUserInfo(account)
-        }
-        
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

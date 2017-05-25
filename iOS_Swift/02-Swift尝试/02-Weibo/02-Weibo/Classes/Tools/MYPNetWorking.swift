@@ -38,4 +38,20 @@ class MYPNetWorking: NSObject {
         }
     }
     
+// MARK: - post 方法
+    func post(_ url: String, _ parameters: [String: Any], _ completionHandler: @escaping (HTTPURLResponse?, Result<String>) -> Void) {
+        
+        let param: Parameters? = parameters as Parameters
+        
+        let request = Alamofire.request(url, method: .post, parameters: param)
+        request.responseString { response in
+            if let error = response.error {
+                print("网络请求报错：\(error)")
+                return
+            }
+            
+            completionHandler(response.response, response.result)
+        }
+    }
+    
 }

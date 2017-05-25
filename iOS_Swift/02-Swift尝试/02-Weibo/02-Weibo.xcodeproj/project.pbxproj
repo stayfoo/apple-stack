@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18519A951ED57D8300E86285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18519A941ED57D8300E86285 /* Assets.xcassets */; };
+		18519A981ED57F7300E86285 /* MYPNewFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519A971ED57F7300E86285 /* MYPNewFeatureController.swift */; };
+		18519A9B1ED5BD8900E86285 /* UIButton+MYP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519A9A1ED5BD8900E86285 /* UIButton+MYP.swift */; };
+		18519A9E1ED679C300E86285 /* MYPUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519A9D1ED679C300E86285 /* MYPUserAccountViewModel.swift */; };
+		18519AA01ED7046700E86285 /* MYPWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519A9F1ED7046700E86285 /* MYPWelcomeController.swift */; };
+		18519AA21ED705FA00E86285 /* UILabel+MYP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519AA11ED705FA00E86285 /* UILabel+MYP.swift */; };
 		18595E441ED2E78500F38E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E431ED2E78500F38E2F /* AppDelegate.swift */; };
-		18595E4B1ED2E78500F38E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18595E4A1ED2E78500F38E2F /* Assets.xcassets */; };
 		18595E5E1ED33BB600F38E2F /* MYPProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E5D1ED33BB600F38E2F /* MYPProfileController.swift */; };
 		18595E601ED33BD400F38E2F /* MYPDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E5F1ED33BD400F38E2F /* MYPDiscoverController.swift */; };
 		18595E621ED33BEA00F38E2F /* MYPMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E611ED33BEA00F38E2F /* MYPMessageController.swift */; };
@@ -26,9 +31,14 @@
 
 /* Begin PBXFileReference section */
 		078E95D391615DE02CE67A48 /* Pods-02-Weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02-Weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-02-Weibo/Pods-02-Weibo.debug.xcconfig"; sourceTree = "<group>"; };
+		18519A941ED57D8300E86285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18519A971ED57F7300E86285 /* MYPNewFeatureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPNewFeatureController.swift; sourceTree = "<group>"; };
+		18519A9A1ED5BD8900E86285 /* UIButton+MYP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+MYP.swift"; sourceTree = "<group>"; };
+		18519A9D1ED679C300E86285 /* MYPUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPUserAccountViewModel.swift; sourceTree = "<group>"; };
+		18519A9F1ED7046700E86285 /* MYPWelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPWelcomeController.swift; sourceTree = "<group>"; };
+		18519AA11ED705FA00E86285 /* UILabel+MYP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+MYP.swift"; sourceTree = "<group>"; };
 		18595E401ED2E78500F38E2F /* 02-Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-Weibo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18595E431ED2E78500F38E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18595E4A1ED2E78500F38E2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18595E4F1ED2E78500F38E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18595E5D1ED33BB600F38E2F /* MYPProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPProfileController.swift; sourceTree = "<group>"; };
 		18595E5F1ED33BD400F38E2F /* MYPDiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPDiscoverController.swift; sourceTree = "<group>"; };
@@ -66,6 +76,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		18519A961ED57F2E00E86285 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				18519A971ED57F7300E86285 /* MYPNewFeatureController.swift */,
+				18519A9F1ED7046700E86285 /* MYPWelcomeController.swift */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		18519A991ED5BBD500E86285 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18519A9A1ED5BD8900E86285 /* UIButton+MYP.swift */,
+				18519AA11ED705FA00E86285 /* UILabel+MYP.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18519A9C1ED6795300E86285 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18519A9D1ED679C300E86285 /* MYPUserAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		18595E371ED2E78500F38E2F = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +123,8 @@
 		18595E421ED2E78500F38E2F /* 02-Weibo */ = {
 			isa = PBXGroup;
 			children = (
+				18519A941ED57D8300E86285 /* Assets.xcassets */,
 				18595E431ED2E78500F38E2F /* AppDelegate.swift */,
-				18595E4A1ED2E78500F38E2F /* Assets.xcassets */,
 				18595E4F1ED2E78500F38E2F /* Info.plist */,
 				18595E551ED2E7D500F38E2F /* Classes */,
 			);
@@ -99,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				18595E741ED41EAC00F38E2F /* Lib */,
+				18519A9C1ED6795300E86285 /* ViewModel */,
 				18595E9D1ED4202100F38E2F /* Model */,
 				18595E571ED2E88A00F38E2F /* Tools */,
 				18595E561ED2E86400F38E2F /* Module */,
@@ -109,6 +146,7 @@
 		18595E561ED2E86400F38E2F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				18519A961ED57F2E00E86285 /* NewFeature */,
 				18595E581ED2E91E00F38E2F /* Main */,
 				18595E591ED2E92500F38E2F /* Home */,
 				18595E5A1ED2E92B00F38E2F /* Message */,
@@ -121,6 +159,7 @@
 		18595E571ED2E88A00F38E2F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				18519A991ED5BBD500E86285 /* Extension */,
 				18595E671ED33DF100F38E2F /* MYPComman.swift */,
 				18595EA01ED433B700F38E2F /* MYPNetWorking.swift */,
 			);
@@ -275,7 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18595E4B1ED2E78500F38E2F /* Assets.xcassets in Resources */,
+				18519A951ED57D8300E86285 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +376,10 @@
 				18595E721ED3D48700F38E2F /* MYPVisitorLoginView.swift in Sources */,
 				18595E6D1ED3463000F38E2F /* MYPMainTabBar.swift in Sources */,
 				18595EA11ED433B700F38E2F /* MYPNetWorking.swift in Sources */,
+				18519A9B1ED5BD8900E86285 /* UIButton+MYP.swift in Sources */,
 				18595E681ED33DF100F38E2F /* MYPComman.swift in Sources */,
+				18519A981ED57F7300E86285 /* MYPNewFeatureController.swift in Sources */,
+				18519A9E1ED679C300E86285 /* MYPUserAccountViewModel.swift in Sources */,
 				18595E6A1ED3401900F38E2F /* MYPMainController.swift in Sources */,
 				18595E621ED33BEA00F38E2F /* MYPMessageController.swift in Sources */,
 				18595E5E1ED33BB600F38E2F /* MYPProfileController.swift in Sources */,
@@ -346,6 +388,8 @@
 				18595E601ED33BD400F38E2F /* MYPDiscoverController.swift in Sources */,
 				18595E701ED3D1A600F38E2F /* MYPOAuthController.swift in Sources */,
 				18595E661ED33C9500F38E2F /* MYPHomeController.swift in Sources */,
+				18519AA21ED705FA00E86285 /* UILabel+MYP.swift in Sources */,
+				18519AA01ED7046700E86285 /* MYPWelcomeController.swift in Sources */,
 				18595E9F1ED42F0700F38E2F /* MYPUserAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +493,7 @@
 			baseConfigurationReference = 078E95D391615DE02CE67A48 /* Pods-02-Weibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = U66QWACWTN;
 				INFOPLIST_FILE = "02-Weibo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -464,6 +509,7 @@
 			baseConfigurationReference = A2DC30CB022F91590D868F8C /* Pods-02-Weibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = U66QWACWTN;
 				INFOPLIST_FILE = "02-Weibo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

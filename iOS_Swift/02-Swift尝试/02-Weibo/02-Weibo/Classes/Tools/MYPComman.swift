@@ -13,19 +13,46 @@
 
 import UIKit
 
-// MARK: - 尺寸相关
+// MARK: - 系统
+// MARK: 尺寸相关
 let kScreenBounds = UIScreen.main.bounds
-let kScreenW = kScreenBounds.width
-let kScreenH = kScreenBounds.height
+let kScreenW      = UIScreen.main.bounds.width
+let kScreenH      = UIScreen.main.bounds.height
+let kScreenSize   = UIScreen.main.bounds.size
+let kScreenOrigin = UIScreen.main.bounds.origin
 
-
-// MARK: - 主题色
+// MARK: 主题色
 let kThemeColor = UIColor.orange
 
+// MARK: 沙盒路径
+let kHomePath = (NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last! as NSString)
 
-// MARK: - 接口 API
+
+
+// MARK: - 自定义
+// MARK: 通知字段
+let k_switchRootVCNotification = "MYPSwitchRootVCNotification"
+
+
+// MARK: 存储字段
+let k_sandBoxLastVersionKey = "sandBoxLastBundleShortVersionKey"
+
+
+
+
+
+
+
+
+// MARK: - SDK
+// MARK: 新浪APPKey
+let k_appKey         = "3656325289"                       // client_id
+let k_appSecret      = "956a491a0d3d5e5a854fb46f0aef0e42" // client_secret
+let k_appRedirectURI = "http://www.mengyueping.com"       // redirect_uri
+
+
+// MARK: 接口 API
+let k_api_url       = "https://api.weibo.com"
 let k_oauth_url     = "https://api.weibo.com/oauth2/authorize"
-let k_client_id     = "4137025574"
-let k_redirect_uri  = "http://www.baidu.com/"
-let k_client_secret = "48286e1870c9d5f14827eb56ddddfd5c"
+
 

@@ -13,42 +13,81 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+// MARK: - 生命周期
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        setupThemeColor()      //设置主题色
+        registerNotification() // 注册通知
         
         
         window = UIWindow(frame: kScreenBounds)
         window!.backgroundColor = UIColor.white
         window!.makeKeyAndVisible()
-        window!.rootViewController = MYPMainController()
+        window!.rootViewController = defaultRootVC()
         
         
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+    /// 析构方法
+    deinit {
+        NotificationCenter.default.removeObserver(self) // 移除通知
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+// MARK: - 私有方法
+    /// 根控制器显示判断
+    fileprivate func defaultRootVC() -> UIViewController {
+        
+        if MYPUserAccountViewModel().userLogin {
+            
+            if isNewVersion() {
+                return MYPNewFeatureController()
+            }
+            return MYPWelcomeController()
+        }
+        
+        return MYPMainController()
     }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    
+    /*
+     * 判断是否版本更新
+     *
+     * - Returns: true : 版本更新了
+     */
+    fileprivate func isNewVersion() -> Bool {
+        
+        let dict = Bundle.main.infoDictionary!
+        let currentNum = (dict["CFBundleShortVersionString"] as! String)
+        
+        let defaults = UserDefaults.standard
+        let lastVersion = defaults.double(forKey: k_sandBoxLastVersionKey)
+        
+        let isNew = Double(currentNum)! > lastVersion
+        if isNew {
+            defaults.set(currentNum, forKey: k_sandBoxLastVersionKey) //重新记录版本
+            defaults.synchronize() //同步沙盒
+        }
+        
+        return isNew
     }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    /*
+     * 设置主题色
+     */
+    fileprivate func setupThemeColor() {
+        UINavigationBar.appearance().tintColor = kThemeColor
+        UITabBar.appearance().tintColor = kThemeColor
     }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+// MARK: - 事件监听
+    @objc fileprivate func switchRootVC(_ note: Notification) {
+        window?.rootViewController = MYPMainController()
     }
-
-
+    
+// MARK: - 通知注册
+    fileprivate func registerNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.switchRootVC(_:)), name: NSNotification.Name(rawValue: k_switchRootVCNotification), object: nil)
+    }
+    
 }
 
