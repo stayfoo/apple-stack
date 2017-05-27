@@ -66,14 +66,14 @@ class MYPUserAccount: NSObject,NSCoding {
     
     /// 保存模型 （自定义对象）
     func saveAccount() {
-        let path = kHomePath.appendingPathComponent("account.plist") // 存储路径
+        let path = kHomeDocumentsPath.appendingPathComponent("account.plist") // 存储路径
         NSKeyedArchiver.archiveRootObject(self, toFile: path)
         print(path)
     }
     
     /// 从本地沙盒获取模型（自定义对象） 类型方法
     class func loadAccount() -> MYPUserAccount? {
-        let path = kHomePath.appendingPathComponent("account.plist") // 存储路径
+        let path = kHomeDocumentsPath.appendingPathComponent("account.plist") // 存储路径
         if let account = NSKeyedUnarchiver.unarchiveObject(withFile: path) as? MYPUserAccount {
             //日期判断（是否过期）
             if account.expires_date?.compare(Date()) == ComparisonResult.orderedDescending {

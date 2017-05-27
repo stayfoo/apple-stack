@@ -17,7 +17,7 @@ class MYPHomeController: MYPBaseController {
         visitorLoginView?.setWithInfo("周边看一看", imageName: nil)
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

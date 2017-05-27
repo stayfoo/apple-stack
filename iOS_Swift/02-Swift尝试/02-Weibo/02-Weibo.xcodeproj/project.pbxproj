@@ -13,6 +13,7 @@
 		18519A9E1ED679C300E86285 /* MYPUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519A9D1ED679C300E86285 /* MYPUserAccountViewModel.swift */; };
 		18519AA01ED7046700E86285 /* MYPWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519A9F1ED7046700E86285 /* MYPWelcomeController.swift */; };
 		18519AA21ED705FA00E86285 /* UILabel+MYP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519AA11ED705FA00E86285 /* UILabel+MYP.swift */; };
+		18519AA41ED82AA100E86285 /* MYPFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519AA31ED82AA100E86285 /* MYPFileManager.swift */; };
 		18595E441ED2E78500F38E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E431ED2E78500F38E2F /* AppDelegate.swift */; };
 		18595E5E1ED33BB600F38E2F /* MYPProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E5D1ED33BB600F38E2F /* MYPProfileController.swift */; };
 		18595E601ED33BD400F38E2F /* MYPDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E5F1ED33BD400F38E2F /* MYPDiscoverController.swift */; };
@@ -37,6 +38,7 @@
 		18519A9D1ED679C300E86285 /* MYPUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPUserAccountViewModel.swift; sourceTree = "<group>"; };
 		18519A9F1ED7046700E86285 /* MYPWelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPWelcomeController.swift; sourceTree = "<group>"; };
 		18519AA11ED705FA00E86285 /* UILabel+MYP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+MYP.swift"; sourceTree = "<group>"; };
+		18519AA31ED82AA100E86285 /* MYPFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPFileManager.swift; sourceTree = "<group>"; };
 		18595E401ED2E78500F38E2F /* 02-Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-Weibo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18595E431ED2E78500F38E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18595E4F1ED2E78500F38E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				18519A991ED5BBD500E86285 /* Extension */,
 				18595E671ED33DF100F38E2F /* MYPComman.swift */,
 				18595EA01ED433B700F38E2F /* MYPNetWorking.swift */,
+				18519AA31ED82AA100E86285 /* MYPFileManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18595E721ED3D48700F38E2F /* MYPVisitorLoginView.swift in Sources */,
+				18519AA41ED82AA100E86285 /* MYPFileManager.swift in Sources */,
 				18595E6D1ED3463000F38E2F /* MYPMainTabBar.swift in Sources */,
 				18595EA11ED433B700F38E2F /* MYPNetWorking.swift in Sources */,
 				18519A9B1ED5BD8900E86285 /* UIButton+MYP.swift in Sources */,

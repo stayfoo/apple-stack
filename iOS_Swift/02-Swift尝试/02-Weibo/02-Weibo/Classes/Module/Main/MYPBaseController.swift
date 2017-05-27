@@ -19,7 +19,7 @@ class MYPBaseController: UITableViewController,MYPVisitorLoginViewDelegate {
     var userLogin = false //标记用户是否登录 true:已登录
     var visitorLoginView: MYPVisitorLoginView?  // 访客视图属性
     
-// MARK: - 初始化
+// MARK: - 生命周期
     
     /*
      loadView :
@@ -35,13 +35,18 @@ class MYPBaseController: UITableViewController,MYPVisitorLoginViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(NSHomeDirectory())
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    deinit {
+        print("--控制器销毁了--")
+    }
+    
 // MARK: - 私有方法
     
     /// 自定义访客视图
@@ -62,6 +67,33 @@ class MYPBaseController: UITableViewController,MYPVisitorLoginViewDelegate {
 // MARK: - 事件监听 & 代理方法
     @objc internal func userWillRegister() {
         print(#function)
+        
+        MYPNetWorking.sharedManager.download("https://cdn.pixabay.com/photo/2017/05/12/08/29/coffee-2306471_1280.jpg"){ response, result in
+            
+//            print("response: \(response) --- result: \(result.value)")
+            
+            
+            /*
+             response: Optional(<NSHTTPURLResponse: 0x60800023b380> 
+             { 
+                URL: https://cdn.pixabay.com/photo/2017/05/12/08/29/coffee-2306471_1280.jpg
+             } 
+             { 
+                status code: 200, headers 
+                 {
+                    "Accept-Ranges"     = bytes;
+                    "Cache-Control"     = "no-cache, must-revalidate";
+                    "Content-Length"    = 257149;
+                    "Content-Type"      = "image/jpeg";
+                    Date                = "Fri, 26 May 2017 02:06:54 GMT";
+                    Etag                = "\"59155653-3ec7d\"";
+                    "Last-Modified"     = "Fri, 12 May 2017 06:29:39 GMT";
+                    Server              = nginx;
+                 } 
+             }
+             ) --- result: SUCCESS
+             */
+        }
     }
     @objc internal func userWillLogin() {
         print(#function)

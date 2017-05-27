@@ -11,6 +11,7 @@
  */
 
 import UIKit
+import Alamofire
 
 class MYPWelcomeController: UIViewController {
     
@@ -24,6 +25,10 @@ class MYPWelcomeController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupLayout()
+        
+        
+        iconView.myp_setImage(with: MYPUserAccountViewModel().headImageURL?.absoluteString, placeholderImage: UIImage(named: "avatar_default_big")!)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) { //动画效果建议在 ViewDidAppear方法中执行
@@ -37,6 +42,10 @@ class MYPWelcomeController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    deinit {
+        print("--控制器销毁了--")
+    }
+    
 // MARK: - 私有方法
     
     /// 创建子控件
@@ -46,7 +55,7 @@ class MYPWelcomeController: UIViewController {
         
         iconView.layer.masksToBounds = true
         iconView.layer.cornerRadius = 45
-        iconView.backgroundColor = UIColor.red
+//        iconView.backgroundColor = UIColor.red //测试
     }
     
     /// 布局子控件
@@ -72,8 +81,9 @@ class MYPWelcomeController: UIViewController {
         let offset = -kScreenH + 180
         view.addConstraint(NSLayoutConstraint(item: iconView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: offset))
         
-        
         UIView.animate(withDuration: 1.2, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 9.8, options: [], animations: { () -> Void in
+            
+//            self.view.removeConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[iconView]-(180)-|", options: [], metrics: nil, views: ["iconView":self.iconView]))
             
             //强制提前刷新页面
             self.view.layoutIfNeeded()
