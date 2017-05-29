@@ -27,7 +27,7 @@ class MYPWelcomeController: UIViewController {
         setupLayout()
         
         
-        iconView.myp_setImage(with: MYPUserAccountViewModel().headImageURL?.absoluteString, placeholderImage: UIImage(named: "avatar_default_big")!)
+        iconView.myp_setImage(with: MYPUserAccountViewModel().headImageURL, placeholderImage: UIImage(named: "avatar_default_big")!)
         
     }
     

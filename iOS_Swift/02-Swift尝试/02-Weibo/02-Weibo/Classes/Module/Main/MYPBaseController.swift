@@ -16,7 +16,7 @@ import UIKit
 class MYPBaseController: UITableViewController,MYPVisitorLoginViewDelegate {
 
 // MARK: - 属性
-    var userLogin = false //标记用户是否登录 true:已登录
+    var userLogin = MYPUserAccountViewModel().userLogin //标记用户是否登录 true:已登录
     var visitorLoginView: MYPVisitorLoginView?  // 访客视图属性
     
 // MARK: - 生命周期

@@ -8,5 +8,5 @@ target '02-Weibo' do
   # Pods for 02-Weibo
 
     pod 'Alamofire', '~> 4.4'
-
+    pod 'SnapKit', '~> 3.2.0'
 end

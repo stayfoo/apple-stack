@@ -20,6 +20,28 @@ import UIKit
 
 extension UIButton {
     
+    convenience init(title: String, backgroundImage: String?, color: UIColor, fontSize: CGFloat = 15, isNeedHighlighted: Bool = false, imageName: String? = nil) {
+        
+        self.init() //便利构造方法可以访问 self 对象
+        
+        setTitle(title, for: UIControlState())
+        if let bgImage = backgroundImage {
+            setBackgroundImage(UIImage(named: bgImage), for: UIControlState.normal)
+            
+            if isNeedHighlighted {
+                setBackgroundImage(UIImage(named: bgImage + "_highlighted"), for: UIControlState.highlighted)
+            }
+        }
+        
+        if let imgName = imageName {
+            setImage(UIImage(named: imgName), for: UIControlState())
+        }
+        setTitleColor(color, for: UIControlState())
+        titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
+        
+        sizeToFit()
+    }
+    
     
     /// 便利构造 button
     ///

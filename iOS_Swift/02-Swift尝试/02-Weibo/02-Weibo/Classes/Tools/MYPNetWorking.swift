@@ -39,7 +39,6 @@ class MYPNetWorking: NSObject {
                 return
             }
             
-            
             completionHandler(response.response, response.result)
         }
     }
@@ -85,7 +84,7 @@ class MYPNetWorking: NSObject {
 // MARK: - 图片下载
 extension UIImageView {
     
-    func myp_setImage(with url: String?, placeholderImage placeholder: UIImage) {
+    func myp_setImage(with url: URL?, placeholderImage placeholder: UIImage) {
         
         guard let urlStr = url else {
             image = placeholder

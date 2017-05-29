@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18075D1E1ED9B63E00B10DC3 /* MYPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18075D1D1ED9B63E00B10DC3 /* MYPStatus.swift */; };
+		18075D201ED9BDA900B10DC3 /* MYPUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18075D1F1ED9BDA900B10DC3 /* MYPUser.swift */; };
+		18075D251EDA72C200B10DC3 /* MYPStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18075D241EDA72C200B10DC3 /* MYPStatusCell.swift */; };
+		18075D271EDA79AB00B10DC3 /* MYPStatusOriginalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18075D261EDA79AB00B10DC3 /* MYPStatusOriginalView.swift */; };
 		18519A951ED57D8300E86285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18519A941ED57D8300E86285 /* Assets.xcassets */; };
 		18519A981ED57F7300E86285 /* MYPNewFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519A971ED57F7300E86285 /* MYPNewFeatureController.swift */; };
 		18519A9B1ED5BD8900E86285 /* UIButton+MYP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18519A9A1ED5BD8900E86285 /* UIButton+MYP.swift */; };
@@ -27,11 +31,18 @@
 		18595E721ED3D48700F38E2F /* MYPVisitorLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E711ED3D48700F38E2F /* MYPVisitorLoginView.swift */; };
 		18595E9F1ED42F0700F38E2F /* MYPUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595E9E1ED42F0700F38E2F /* MYPUserAccount.swift */; };
 		18595EA11ED433B700F38E2F /* MYPNetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18595EA01ED433B700F38E2F /* MYPNetWorking.swift */; };
+		1885F1031EDC1D7D009B09EB /* MYPPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885F1021EDC1D7D009B09EB /* MYPPictureView.swift */; };
+		1885F1051EDC25D6009B09EB /* UIColor+MYP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885F1041EDC25D6009B09EB /* UIColor+MYP.swift */; };
+		1885F1071EDC5739009B09EB /* MYPStatusBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885F1061EDC5739009B09EB /* MYPStatusBottomView.swift */; };
 		CB7F694F9FBE967505F4E509 /* Pods_02_Weibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C054F14E71B7B6B53D64277B /* Pods_02_Weibo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		078E95D391615DE02CE67A48 /* Pods-02-Weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02-Weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-02-Weibo/Pods-02-Weibo.debug.xcconfig"; sourceTree = "<group>"; };
+		18075D1D1ED9B63E00B10DC3 /* MYPStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPStatus.swift; sourceTree = "<group>"; };
+		18075D1F1ED9BDA900B10DC3 /* MYPUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPUser.swift; sourceTree = "<group>"; };
+		18075D241EDA72C200B10DC3 /* MYPStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPStatusCell.swift; sourceTree = "<group>"; };
+		18075D261EDA79AB00B10DC3 /* MYPStatusOriginalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPStatusOriginalView.swift; sourceTree = "<group>"; };
 		18519A941ED57D8300E86285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18519A971ED57F7300E86285 /* MYPNewFeatureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPNewFeatureController.swift; sourceTree = "<group>"; };
 		18519A9A1ED5BD8900E86285 /* UIButton+MYP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+MYP.swift"; sourceTree = "<group>"; };
@@ -54,6 +65,9 @@
 		18595E711ED3D48700F38E2F /* MYPVisitorLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPVisitorLoginView.swift; sourceTree = "<group>"; };
 		18595E9E1ED42F0700F38E2F /* MYPUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPUserAccount.swift; sourceTree = "<group>"; };
 		18595EA01ED433B700F38E2F /* MYPNetWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPNetWorking.swift; sourceTree = "<group>"; };
+		1885F1021EDC1D7D009B09EB /* MYPPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPPictureView.swift; sourceTree = "<group>"; };
+		1885F1041EDC25D6009B09EB /* UIColor+MYP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+MYP.swift"; sourceTree = "<group>"; };
+		1885F1061EDC5739009B09EB /* MYPStatusBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPStatusBottomView.swift; sourceTree = "<group>"; };
 		A2DC30CB022F91590D868F8C /* Pods-02-Weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02-Weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-02-Weibo/Pods-02-Weibo.release.xcconfig"; sourceTree = "<group>"; };
 		C054F14E71B7B6B53D64277B /* Pods_02_Weibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_02_Weibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +92,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		18075D231EDA726E00B10DC3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18075D241EDA72C200B10DC3 /* MYPStatusCell.swift */,
+				18075D261EDA79AB00B10DC3 /* MYPStatusOriginalView.swift */,
+				1885F1021EDC1D7D009B09EB /* MYPPictureView.swift */,
+				1885F1061EDC5739009B09EB /* MYPStatusBottomView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		18519A961ED57F2E00E86285 /* NewFeature */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +117,7 @@
 			children = (
 				18519A9A1ED5BD8900E86285 /* UIButton+MYP.swift */,
 				18519AA11ED705FA00E86285 /* UILabel+MYP.swift */,
+				1885F1041EDC25D6009B09EB /* UIColor+MYP.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -183,6 +209,7 @@
 		18595E591ED2E92500F38E2F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				18075D231EDA726E00B10DC3 /* Cell */,
 				18595E651ED33C9500F38E2F /* MYPHomeController.swift */,
 			);
 			path = Home;
@@ -240,6 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				18595E9E1ED42F0700F38E2F /* MYPUserAccount.swift */,
+				18075D1D1ED9B63E00B10DC3 /* MYPStatus.swift */,
+				18075D1F1ED9BDA900B10DC3 /* MYPUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -376,22 +405,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18075D201ED9BDA900B10DC3 /* MYPUser.swift in Sources */,
 				18595E721ED3D48700F38E2F /* MYPVisitorLoginView.swift in Sources */,
 				18519AA41ED82AA100E86285 /* MYPFileManager.swift in Sources */,
 				18595E6D1ED3463000F38E2F /* MYPMainTabBar.swift in Sources */,
 				18595EA11ED433B700F38E2F /* MYPNetWorking.swift in Sources */,
 				18519A9B1ED5BD8900E86285 /* UIButton+MYP.swift in Sources */,
+				1885F1071EDC5739009B09EB /* MYPStatusBottomView.swift in Sources */,
 				18595E681ED33DF100F38E2F /* MYPComman.swift in Sources */,
 				18519A981ED57F7300E86285 /* MYPNewFeatureController.swift in Sources */,
 				18519A9E1ED679C300E86285 /* MYPUserAccountViewModel.swift in Sources */,
 				18595E6A1ED3401900F38E2F /* MYPMainController.swift in Sources */,
+				18075D251EDA72C200B10DC3 /* MYPStatusCell.swift in Sources */,
 				18595E621ED33BEA00F38E2F /* MYPMessageController.swift in Sources */,
+				1885F1031EDC1D7D009B09EB /* MYPPictureView.swift in Sources */,
 				18595E5E1ED33BB600F38E2F /* MYPProfileController.swift in Sources */,
 				18595E641ED33C3F00F38E2F /* MYPBaseController.swift in Sources */,
+				18075D271EDA79AB00B10DC3 /* MYPStatusOriginalView.swift in Sources */,
+				18075D1E1ED9B63E00B10DC3 /* MYPStatus.swift in Sources */,
 				18595E441ED2E78500F38E2F /* AppDelegate.swift in Sources */,
 				18595E601ED33BD400F38E2F /* MYPDiscoverController.swift in Sources */,
 				18595E701ED3D1A600F38E2F /* MYPOAuthController.swift in Sources */,
 				18595E661ED33C9500F38E2F /* MYPHomeController.swift in Sources */,
+				1885F1051EDC25D6009B09EB /* UIColor+MYP.swift in Sources */,
 				18519AA21ED705FA00E86285 /* UILabel+MYP.swift in Sources */,
 				18519AA01ED7046700E86285 /* MYPWelcomeController.swift in Sources */,
 				18595E9F1ED42F0700F38E2F /* MYPUserAccount.swift in Sources */,
