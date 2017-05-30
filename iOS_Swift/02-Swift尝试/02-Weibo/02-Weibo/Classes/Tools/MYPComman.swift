@@ -51,6 +51,8 @@ import UIKit
     let k_imagePath = kHomeLibraryCachesPath.appendingPathComponent("image.plist")// 图片存储路径
 
 
+    // MARK: 错误信息
+    let AppErrorTip = "网络正在睡觉中,请稍后再试"
 
 
 

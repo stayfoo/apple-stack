@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import SnapKit
 
 class MYPStatusOriginalView: UIView {
 // MARK: - 属性
+    var bottomConstraints: Constraint? //底部约束
+    
     var model: MYPStatus? {
         
         //模型赋值
@@ -26,7 +29,39 @@ class MYPStatusOriginalView: UIView {
 //            timeLabel.text = status.created_at
 //            sourceLabel.text = status.source
             contentLabel.text = status.text
-            pictureView.imageURLs = status.imageURLs
+            
+            bottomConstraints?.deactivate() //解除可能复用的约束
+            
+            //配图
+            if let urls = status.imageURLs, urls.count != 0 {
+                
+                pictureView.imageURLs = urls
+                pictureView.isHidden = false
+                
+//                guard let _ = self.bottomConstraints else {
+                    self.snp.makeConstraints({ (make) in
+                        self.bottomConstraints = make.bottom.equalTo(pictureView.snp.bottom).offset(statusCellMargin).constraint
+                    })
+//                    return
+//                }
+//                self.snp.updateConstraints({ (make) in
+//                    self.bottomConstraints = make.bottom.equalTo(pictureView.snp.bottom).offset(statusCellMargin).constraint
+//                })
+                
+            } else { //无配图
+                pictureView.isHidden = true
+                
+//                guard let _ = self.bottomConstraints else {
+                    self.snp.makeConstraints({ (make) in
+                        self.bottomConstraints = make.bottom.equalTo(contentLabel.snp.bottom).offset(statusCellMargin).constraint
+                    })
+//                    return
+//                }
+//                self.snp.updateConstraints({ (make) in
+//                    self.bottomConstraints = make.bottom.equalTo(contentLabel.snp.bottom).offset(statusCellMargin).constraint
+//                })
+                
+            }
             
         }
     }
@@ -145,7 +180,7 @@ class MYPStatusOriginalView: UIView {
             make.top.equalTo(contentLabel.snp.bottom).offset(statusCellMargin)
             make.left.equalTo(contentLabel.snp.left)
 //            make.size.equalTo(CGSize(width: 100, height: 100))
-            make.bottom.equalTo(self.snp.bottom)
+//            make.bottom.equalTo(self.snp.bottom)
         }
         
         
@@ -153,6 +188,11 @@ class MYPStatusOriginalView: UIView {
 //        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[contentLabel]-(12)-[pictureView]-(12)-|", options: [], metrics: nil, views: ["pictureView":pictureView,"contentLabel":contentLabel]))
 //        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[pictureView(100)]", options: [], metrics: nil, views: ["pictureView":pictureView]))
 //        addConstraint(NSLayoutConstraint(item: pictureView, attribute: NSLayoutAttribute.left, relatedBy: NSLayoutRelation.equal, toItem: contentLabel, attribute: NSLayoutAttribute.left, multiplier: 1, constant: 0))
+        
+        //底部约束
+        self.snp.makeConstraints { (make) in
+            self.bottomConstraints = make.bottom.equalTo(pictureView.snp.bottom).offset(statusCellMargin).constraint
+        }
         
     }
     

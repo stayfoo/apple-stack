@@ -20,6 +20,8 @@ class MYPStatus: NSObject {
     var source: String?       //微博来源
     var user: MYPUser?        //添加user属性
     
+    var retweeted_status: MYPStatus? //被转发的微博
+    
     //配图数组属性
     var pic_urls: [[String : String]]? {
         didSet {
@@ -31,14 +33,23 @@ class MYPStatus: NSObject {
             
             for item in urls {
                 let urlString = item["thumbnail_pic"]
-//                let largeString = urlString?.replacingOccurrences(of: "thumbnail", with: "bmiddle")
-                let url = URL(string: urlString!)!
+                let largeString = urlString?.replacingOccurrences(of: "thumbnail", with: "bmiddle")
+                let url = URL(string: largeString!)!
                 imageURLs?.append(url)
             }
         }
     }
+    
     var imageURLs: [URL]?
-  
+    
+    var pictureURLs: [URL]? {
+        if retweeted_status != nil {
+            return retweeted_status?.imageURLs
+        }
+        
+        return imageURLs
+    }
+    
     
 // MARK: - 构造方法
     init(dict: [String : AnyObject]) {
@@ -51,6 +62,13 @@ class MYPStatus: NSObject {
         if key == "user" {
             if let dict = value as? [String : AnyObject] {
                 user = MYPUser(dict: dict)  //字典转模型
+            }
+            return
+        }
+        
+        if key == "retweeted_status" {
+            if let dict = value as? [String : AnyObject] {
+                retweeted_status = MYPStatus(dict: dict)
             }
             return
         }
