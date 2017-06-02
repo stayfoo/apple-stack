@@ -72,7 +72,7 @@ extension UIButton {
     /// - Parameters:
     ///   - imageName: 按钮图片
     ///   - backgroundImage: 按钮背景图片
-    convenience init(imageName: String, backgroundImage: String) {
+    convenience init(imageName: String, backgroundImage: String?) {
         self.init()
         
         setBackgroundImage(UIImage(named: imageName), for: UIControlState.normal)

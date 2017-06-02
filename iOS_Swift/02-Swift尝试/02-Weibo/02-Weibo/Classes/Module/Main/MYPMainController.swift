@@ -39,6 +39,11 @@ class MYPMainController: UITabBarController {
      */
     @objc fileprivate func composeBtnDidClick() {
         print(#function)
+        
+        let composeVC = MYPComposeController()
+        let navVC = UINavigationController(rootViewController: composeVC)
+        present(navVC, animated: true, completion: nil)
+        
     }
     
 // MARK: - 私有方法
@@ -56,7 +61,7 @@ class MYPMainController: UITabBarController {
     
     fileprivate func addChildViewController(_ vc: UIViewController, title: String,imageName: String) {
         
-        let nav = UINavigationController(rootViewController: vc)
+        let nav = MYPBaseNavController(rootViewController: vc)
         vc.title = title
         vc.tabBarItem.image = UIImage(named: imageName)
         addChildViewController(nav)

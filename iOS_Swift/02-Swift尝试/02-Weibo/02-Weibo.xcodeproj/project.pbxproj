@@ -37,6 +37,9 @@
 		1885F1091EDD0846009B09EB /* MYPStatusRetweetedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885F1081EDD0846009B09EB /* MYPStatusRetweetedView.swift */; };
 		1885F10B1EDDAA70009B09EB /* MYPTempController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885F10A1EDDAA70009B09EB /* MYPTempController.swift */; };
 		1885F10D1EDDAAEC009B09EB /* UIView+MYPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885F10C1EDDAAEC009B09EB /* UIView+MYPVC.swift */; };
+		1885F10F1EDDB3C7009B09EB /* MYPBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885F10E1EDDB3C7009B09EB /* MYPBaseNavController.swift */; };
+		1885F1121EDDB729009B09EB /* MYPComposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885F1111EDDB729009B09EB /* MYPComposeController.swift */; };
+		1885F1141EDEA163009B09EB /* MYPPicturePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885F1131EDEA163009B09EB /* MYPPicturePickerController.swift */; };
 		CB7F694F9FBE967505F4E509 /* Pods_02_Weibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C054F14E71B7B6B53D64277B /* Pods_02_Weibo.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +77,9 @@
 		1885F1081EDD0846009B09EB /* MYPStatusRetweetedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPStatusRetweetedView.swift; sourceTree = "<group>"; };
 		1885F10A1EDDAA70009B09EB /* MYPTempController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPTempController.swift; sourceTree = "<group>"; };
 		1885F10C1EDDAAEC009B09EB /* UIView+MYPVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+MYPVC.swift"; sourceTree = "<group>"; };
+		1885F10E1EDDB3C7009B09EB /* MYPBaseNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPBaseNavController.swift; sourceTree = "<group>"; };
+		1885F1111EDDB729009B09EB /* MYPComposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPComposeController.swift; sourceTree = "<group>"; };
+		1885F1131EDEA163009B09EB /* MYPPicturePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPPicturePickerController.swift; sourceTree = "<group>"; };
 		A2DC30CB022F91590D868F8C /* Pods-02-Weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02-Weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-02-Weibo/Pods-02-Weibo.release.xcconfig"; sourceTree = "<group>"; };
 		C054F14E71B7B6B53D64277B /* Pods_02_Weibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_02_Weibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,6 +188,7 @@
 		18595E561ED2E86400F38E2F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				1885F1101EDDB6E1009B09EB /* Compose */,
 				18519A961ED57F2E00E86285 /* NewFeature */,
 				18595E581ED2E91E00F38E2F /* Main */,
 				18595E591ED2E92500F38E2F /* Home */,
@@ -210,6 +217,7 @@
 				18595E6B1ED3419200F38E2F /* View */,
 				18595E691ED3401900F38E2F /* MYPMainController.swift */,
 				18595E631ED33C3F00F38E2F /* MYPBaseController.swift */,
+				1885F10E1EDDB3C7009B09EB /* MYPBaseNavController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -280,6 +288,15 @@
 				18075D1F1ED9BDA900B10DC3 /* MYPUser.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1885F1101EDDB6E1009B09EB /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				1885F1111EDDB729009B09EB /* MYPComposeController.swift */,
+				1885F1131EDEA163009B09EB /* MYPPicturePickerController.swift */,
+			);
+			path = Compose;
 			sourceTree = "<group>";
 		};
 		74BEF42C453639DBA8E4EFE7 /* Pods */ = {
@@ -419,6 +436,7 @@
 				18519AA41ED82AA100E86285 /* MYPFileManager.swift in Sources */,
 				18595E6D1ED3463000F38E2F /* MYPMainTabBar.swift in Sources */,
 				18595EA11ED433B700F38E2F /* MYPNetWorking.swift in Sources */,
+				1885F10F1EDDB3C7009B09EB /* MYPBaseNavController.swift in Sources */,
 				18519A9B1ED5BD8900E86285 /* UIButton+MYP.swift in Sources */,
 				1885F1071EDC5739009B09EB /* MYPStatusBottomView.swift in Sources */,
 				18595E681ED33DF100F38E2F /* MYPComman.swift in Sources */,
@@ -429,6 +447,7 @@
 				18075D251EDA72C200B10DC3 /* MYPStatusCell.swift in Sources */,
 				18595E621ED33BEA00F38E2F /* MYPMessageController.swift in Sources */,
 				1885F1031EDC1D7D009B09EB /* MYPPictureView.swift in Sources */,
+				1885F1121EDDB729009B09EB /* MYPComposeController.swift in Sources */,
 				18595E5E1ED33BB600F38E2F /* MYPProfileController.swift in Sources */,
 				18595E641ED33C3F00F38E2F /* MYPBaseController.swift in Sources */,
 				18075D271EDA79AB00B10DC3 /* MYPStatusOriginalView.swift in Sources */,
@@ -442,6 +461,7 @@
 				1885F10D1EDDAAEC009B09EB /* UIView+MYPVC.swift in Sources */,
 				18519AA21ED705FA00E86285 /* UILabel+MYP.swift in Sources */,
 				18519AA01ED7046700E86285 /* MYPWelcomeController.swift in Sources */,
+				1885F1141EDEA163009B09EB /* MYPPicturePickerController.swift in Sources */,
 				18595E9F1ED42F0700F38E2F /* MYPUserAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

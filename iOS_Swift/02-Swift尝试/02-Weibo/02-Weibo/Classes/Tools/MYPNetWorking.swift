@@ -12,8 +12,10 @@ import UIKit
 import Alamofire
 
 class MYPNetWorking: NSObject {
+
+// MARK: - Alamofire
     
-// MARK: - 单例
+// MARK: 单例
     static let sharedManager: MYPNetWorking = {
         let manager = MYPNetWorking()
         
@@ -21,7 +23,7 @@ class MYPNetWorking: NSObject {
     }()
     
     
-// MARK: - get 方法
+    // get 方法
     func get(_ url: String, _ parameters: [String: Any]?, _ completionHandler: @escaping (HTTPURLResponse?, Result<String>) -> Void) {
         
         let param: Parameters?
@@ -43,7 +45,7 @@ class MYPNetWorking: NSObject {
         }
     }
     
-// MARK: - post 方法
+    // post 方法
     func post(_ url: String, _ parameters: [String: Any], _ completionHandler: @escaping (HTTPURLResponse?, Result<String>) -> Void) {
         
         let param: Parameters? = parameters as Parameters
@@ -60,7 +62,7 @@ class MYPNetWorking: NSObject {
         
     }
     
-// MARK: - download 方法
+    // download 方法
     func download(_ url: String, _ completionHandler: @escaping (HTTPURLResponse?, Result<String>) -> Void) {
         
         let destination = DownloadRequest.suggestedDownloadDestination(
@@ -81,7 +83,7 @@ class MYPNetWorking: NSObject {
     }
 }
 
-// MARK: - 图片下载
+// MARK: 图片下载
 extension UIImageView {
     
     func myp_setImage(with url: URL?, placeholderImage placeholder: UIImage) {
@@ -129,10 +131,41 @@ extension UIImageView {
             }
         }
     }
-    
-    
-
 }
 
 
+// MARK: - URLSession
+
+extension MYPNetWorking {
+    
+    func fetchData(url: String) { // ,@escaping ()
+        let urlObj = URL(string: url)!
+        
+        var urlRequest = URLRequest(
+            url: urlObj,
+            cachePolicy: URLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData,
+            timeoutInterval: 10.0 * 1000)
+        urlRequest.httpMethod = "GET"
+        urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+//        open func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask
+        
+        let task: URLSessionDataTask = URLSession(configuration: URLSessionConfiguration.default).dataTask(with: urlRequest) { (data, response, error) in
+            
+            guard error == nil else {
+                print("Error : \(error)")
+                return
+            }
+            
+            guard let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as? [String: Any] else {
+                print("data is nil(数据为空)")
+                return
+            }
+            
+            print("json: \(json)")
+        }
+        
+        task.resume()
+    }
+}
 
