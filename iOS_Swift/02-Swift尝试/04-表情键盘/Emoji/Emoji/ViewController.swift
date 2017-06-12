@@ -83,11 +83,12 @@ class ViewController: UIViewController {
         EmoticonManager().loadPackages()
     }
     
-    fileprivate lazy var keyboardView: EmoticonKeyboardView = EmoticonKeyboardView { (emoticon) in
-        self.insertText(emoticon)
+//    weak var weakSelf = self
+//    [weak self]   解除闭包强引用
+//    [unowned self]  类被系统内存回收时，内存地址不会自动指向nil
+    fileprivate lazy var keyboardView: EmoticonKeyboardView = EmoticonKeyboardView { [weak self] (emoticon) in
+        self?.insertText(emoticon)
     }
-        
-//     [weak self]
     
     
     fileprivate func insertText(_ em: Emoticon) {
