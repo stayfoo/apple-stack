@@ -1,6 +1,6 @@
 `iOS` 开发使用总结：
 
->- [iOS_JavaScript](./iOS_JavaScript)
+> [iOS_JavaScript](./iOS_JavaScript)
 一些关于`iOS`与`JS`交互的经验，解决问题包括：
 * `iOS`中如何加载`HTML`页面？（包括`Objective-C`和`Swift`）
 * `iOS`中如何去执行一段`JavaScript`代码？（包括`Objective-C`和`Swift`）
@@ -15,7 +15,7 @@
 * 如何使用`JSExport`调用系统或外部引用库的`OC/Swift`类的属性和方法？
 * `JSManagedValue`的作用？
 
-参看我的[博客: www.mengyueping.com](www.mengyueping.com)
+参看我的[博客: www.mengyueping.com](http://www.mengyueping.com/categories/iOS/JavaScriptCore/)
 
 >- [iOS_OC](./iOS_OC)
 
