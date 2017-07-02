@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <br>
+    <button onclick="sendMsgToiOS()">点击给iOS原生发送消息</button>
+    <a href="https://baidu.com">百度</a>
+    
+</body>
+</html>
+
+<script>
+    function sendMsgToiOS() {
+
+        var ua = navigator.userAgent.toLowerCase();
+        if (!!ua.match(/\(i[^;]+;( u;)? cpu.+mac os x/)) { // iOS   Mac OS
+
+            var JSCallIOS = function () {
+                //发送给 iOS 原生的 json 数据
+                var message = {
+                    'method': 'push', 
+                    'name' : '王小锌',
+                    'title' : '朋友圈',  
+                    'url': 'http://www.baidu.com'
+                };
+                //JS 脚本向 iOS原生传递消息
+                window.webkit.messageHandlers.JSMessageToIOS.postMessage(message);
+            }
+            JSCallIOS();
+
+        } else if (/android/.test(ua)) { // 安卓
+            window.android.finish();
+        }
+    }
+</script>

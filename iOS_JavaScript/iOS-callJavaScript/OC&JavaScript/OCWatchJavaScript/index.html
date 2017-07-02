@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <br>
+        <button onclick="openCamera()">访问相册</button>
+        <a href="https://baidu.com">百度</a>
+        <input type="text" id="field">
+            
+        <script>
+            function openCamera() {
+                document.getElementById('field').value = "赋值一下";
+                window.location.href = 'mengyueping.com://openCamera'; //自定义协议
+            }
+        </script>
+    </body>
+</html>

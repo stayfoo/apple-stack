@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function btnClick(){
+            log("打印自定义对象："+jsObj.text);
+            //jsObj.text = 333; //子线程更新UI，Crash
+        }
+    </script>
+</head>
+<body>
+    <input onclick="log()" type="button"  style="width:300px;height:50px;" value="打印log" />
+    <input onclick="btnClick()" type="button"  style="width:300px;height:50px;" value="点击H5的按钮标签，修改iOS的UITextField的输入值" />
+    
+</body>
+</html>

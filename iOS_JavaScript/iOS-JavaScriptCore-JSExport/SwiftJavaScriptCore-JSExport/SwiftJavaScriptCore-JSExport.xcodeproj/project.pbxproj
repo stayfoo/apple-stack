@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1831223A1F0393E200673D39 /* MYPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183122391F0393E200673D39 /* MYPObject.swift */; };
+		183593FC1F038FE5009D12F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183593FB1F038FE5009D12F8 /* AppDelegate.swift */; };
+		183593FE1F038FE5009D12F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183593FD1F038FE5009D12F8 /* ViewController.swift */; };
+		183594011F038FE5009D12F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183593FF1F038FE5009D12F8 /* Main.storyboard */; };
+		183594031F038FE5009D12F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183594021F038FE5009D12F8 /* Assets.xcassets */; };
+		183594061F038FE5009D12F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183594041F038FE5009D12F8 /* LaunchScreen.storyboard */; };
+		184B4D011F03EAD800C1E939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B4D001F03EAD800C1E939 /* AppDelegate.swift */; };
+		184B4D031F03EAD800C1E939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B4D021F03EAD800C1E939 /* ViewController.swift */; };
+		184B4D061F03EAD800C1E939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B4D041F03EAD800C1E939 /* Main.storyboard */; };
+		184B4D081F03EAD800C1E939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B4D071F03EAD800C1E939 /* Assets.xcassets */; };
+		184B4D0B1F03EAD800C1E939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B4D091F03EAD800C1E939 /* LaunchScreen.storyboard */; };
+		184B4D111F03EAF400C1E939 /* MYPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B4D101F03EAF400C1E939 /* MYPObject.swift */; };
+		184B4D191F03F9DD00C1E939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B4D181F03F9DC00C1E939 /* AppDelegate.swift */; };
+		184B4D1B1F03F9DD00C1E939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B4D1A1F03F9DD00C1E939 /* ViewController.swift */; };
+		184B4D1E1F03F9DD00C1E939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B4D1C1F03F9DD00C1E939 /* Main.storyboard */; };
+		184B4D201F03F9DD00C1E939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B4D1F1F03F9DD00C1E939 /* Assets.xcassets */; };
+		184B4D231F03F9DD00C1E939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B4D211F03F9DD00C1E939 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		183122391F0393E200673D39 /* MYPObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYPObject.swift; sourceTree = "<group>"; };
+		183593F81F038FE5009D12F8 /* SwiftJavaScriptCore-JSExport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftJavaScriptCore-JSExport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		183593FB1F038FE5009D12F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		183593FD1F038FE5009D12F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		183594001F038FE5009D12F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		183594021F038FE5009D12F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		183594051F038FE5009D12F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		183594071F038FE5009D12F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184B4CFE1F03EAD800C1E939 /* Swift-JSManagedValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-JSManagedValue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		184B4D001F03EAD800C1E939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		184B4D021F03EAD800C1E939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		184B4D051F03EAD800C1E939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		184B4D071F03EAD800C1E939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		184B4D0A1F03EAD800C1E939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		184B4D0C1F03EAD800C1E939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184B4D101F03EAF400C1E939 /* MYPObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYPObject.swift; sourceTree = "<group>"; };
+		184B4D161F03F9DC00C1E939 /* JSExport实现JS对系统对象的调用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JSExport实现JS对系统对象的调用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		184B4D181F03F9DC00C1E939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		184B4D1A1F03F9DD00C1E939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		184B4D1D1F03F9DD00C1E939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		184B4D1F1F03F9DD00C1E939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		184B4D221F03F9DD00C1E939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		184B4D241F03F9DD00C1E939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183593F51F038FE5009D12F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B4CFB1F03EAD800C1E939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B4D131F03F9DC00C1E939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183593EF1F038FE5009D12F8 = {
+			isa = PBXGroup;
+			children = (
+				183593FA1F038FE5009D12F8 /* SwiftJavaScriptCore-JSExport */,
+				184B4CFF1F03EAD800C1E939 /* Swift-JSManagedValue */,
+				184B4D171F03F9DC00C1E939 /* JSExport实现JS对系统对象的调用 */,
+				183593F91F038FE5009D12F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		183593F91F038FE5009D12F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183593F81F038FE5009D12F8 /* SwiftJavaScriptCore-JSExport.app */,
+				184B4CFE1F03EAD800C1E939 /* Swift-JSManagedValue.app */,
+				184B4D161F03F9DC00C1E939 /* JSExport实现JS对系统对象的调用.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		183593FA1F038FE5009D12F8 /* SwiftJavaScriptCore-JSExport */ = {
+			isa = PBXGroup;
+			children = (
+				183593FB1F038FE5009D12F8 /* AppDelegate.swift */,
+				183122391F0393E200673D39 /* MYPObject.swift */,
+				183593FD1F038FE5009D12F8 /* ViewController.swift */,
+				183593FF1F038FE5009D12F8 /* Main.storyboard */,
+				183594021F038FE5009D12F8 /* Assets.xcassets */,
+				183594041F038FE5009D12F8 /* LaunchScreen.storyboard */,
+				183594071F038FE5009D12F8 /* Info.plist */,
+			);
+			path = "SwiftJavaScriptCore-JSExport";
+			sourceTree = "<group>";
+		};
+		184B4CFF1F03EAD800C1E939 /* Swift-JSManagedValue */ = {
+			isa = PBXGroup;
+			children = (
+				184B4D001F03EAD800C1E939 /* AppDelegate.swift */,
+				184B4D101F03EAF400C1E939 /* MYPObject.swift */,
+				184B4D021F03EAD800C1E939 /* ViewController.swift */,
+				184B4D041F03EAD800C1E939 /* Main.storyboard */,
+				184B4D071F03EAD800C1E939 /* Assets.xcassets */,
+				184B4D091F03EAD800C1E939 /* LaunchScreen.storyboard */,
+				184B4D0C1F03EAD800C1E939 /* Info.plist */,
+			);
+			path = "Swift-JSManagedValue";
+			sourceTree = "<group>";
+		};
+		184B4D171F03F9DC00C1E939 /* JSExport实现JS对系统对象的调用 */ = {
+			isa = PBXGroup;
+			children = (
+				184B4D181F03F9DC00C1E939 /* AppDelegate.swift */,
+				184B4D1A1F03F9DD00C1E939 /* ViewController.swift */,
+				184B4D1C1F03F9DD00C1E939 /* Main.storyboard */,
+				184B4D1F1F03F9DD00C1E939 /* Assets.xcassets */,
+				184B4D211F03F9DD00C1E939 /* LaunchScreen.storyboard */,
+				184B4D241F03F9DD00C1E939 /* Info.plist */,
+			);
+			path = "JSExport实现JS对系统对象的调用";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		183593F71F038FE5009D12F8 /* SwiftJavaScriptCore-JSExport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1835940A1F038FE5009D12F8 /* Build configuration list for PBXNativeTarget "SwiftJavaScriptCore-JSExport" */;
+			buildPhases = (
+				183593F41F038FE5009D12F8 /* Sources */,
+				183593F51F038FE5009D12F8 /* Frameworks */,
+				183593F61F038FE5009D12F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftJavaScriptCore-JSExport";
+			productName = "SwiftJavaScriptCore-JSExport";
+			productReference = 183593F81F038FE5009D12F8 /* SwiftJavaScriptCore-JSExport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		184B4CFD1F03EAD800C1E939 /* Swift-JSManagedValue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184B4D0D1F03EAD800C1E939 /* Build configuration list for PBXNativeTarget "Swift-JSManagedValue" */;
+			buildPhases = (
+				184B4CFA1F03EAD800C1E939 /* Sources */,
+				184B4CFB1F03EAD800C1E939 /* Frameworks */,
+				184B4CFC1F03EAD800C1E939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-JSManagedValue";
+			productName = "Swift-JSManagedValue";
+			productReference = 184B4CFE1F03EAD800C1E939 /* Swift-JSManagedValue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		184B4D151F03F9DC00C1E939 /* JSExport实现JS对系统对象的调用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184B4D251F03F9DD00C1E939 /* Build configuration list for PBXNativeTarget "JSExport实现JS对系统对象的调用" */;
+			buildPhases = (
+				184B4D121F03F9DC00C1E939 /* Sources */,
+				184B4D131F03F9DC00C1E939 /* Frameworks */,
+				184B4D141F03F9DC00C1E939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JSExport实现JS对系统对象的调用";
+			productName = "JSExport实现JS对系统对象的调用";
+			productReference = 184B4D161F03F9DC00C1E939 /* JSExport实现JS对系统对象的调用.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		183593F01F038FE5009D12F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MYP;
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = www.mengyueping.com;
+				TargetAttributes = {
+					183593F71F038FE5009D12F8 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					184B4CFD1F03EAD800C1E939 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					184B4D151F03F9DC00C1E939 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 183593F31F038FE5009D12F8 /* Build configuration list for PBXProject "SwiftJavaScriptCore-JSExport" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 183593EF1F038FE5009D12F8;
+			productRefGroup = 183593F91F038FE5009D12F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				183593F71F038FE5009D12F8 /* SwiftJavaScriptCore-JSExport */,
+				184B4CFD1F03EAD800C1E939 /* Swift-JSManagedValue */,
+				184B4D151F03F9DC00C1E939 /* JSExport实现JS对系统对象的调用 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		183593F61F038FE5009D12F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183594061F038FE5009D12F8 /* LaunchScreen.storyboard in Resources */,
+				183594031F038FE5009D12F8 /* Assets.xcassets in Resources */,
+				183594011F038FE5009D12F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B4CFC1F03EAD800C1E939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184B4D0B1F03EAD800C1E939 /* LaunchScreen.storyboard in Resources */,
+				184B4D081F03EAD800C1E939 /* Assets.xcassets in Resources */,
+				184B4D061F03EAD800C1E939 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B4D141F03F9DC00C1E939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184B4D231F03F9DD00C1E939 /* LaunchScreen.storyboard in Resources */,
+				184B4D201F03F9DD00C1E939 /* Assets.xcassets in Resources */,
+				184B4D1E1F03F9DD00C1E939 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183593F41F038FE5009D12F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183593FE1F038FE5009D12F8 /* ViewController.swift in Sources */,
+				183593FC1F038FE5009D12F8 /* AppDelegate.swift in Sources */,
+				1831223A1F0393E200673D39 /* MYPObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B4CFA1F03EAD800C1E939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184B4D031F03EAD800C1E939 /* ViewController.swift in Sources */,
+				184B4D111F03EAF400C1E939 /* MYPObject.swift in Sources */,
+				184B4D011F03EAD800C1E939 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B4D121F03F9DC00C1E939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184B4D1B1F03F9DD00C1E939 /* ViewController.swift in Sources */,
+				184B4D191F03F9DD00C1E939 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		183593FF1F038FE5009D12F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183594001F038FE5009D12F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		183594041F038FE5009D12F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183594051F038FE5009D12F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		184B4D041F03EAD800C1E939 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184B4D051F03EAD800C1E939 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		184B4D091F03EAD800C1E939 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184B4D0A1F03EAD800C1E939 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		184B4D1C1F03F9DD00C1E939 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184B4D1D1F03F9DD00C1E939 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		184B4D211F03F9DD00C1E939 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184B4D221F03F9DD00C1E939 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		183594081F038FE5009D12F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		183594091F038FE5009D12F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1835940B1F038FE5009D12F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U66QWACWTN;
+				INFOPLIST_FILE = "SwiftJavaScriptCore-JSExport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.SwiftJavaScriptCore-JSExport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1835940C1F038FE5009D12F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U66QWACWTN;
+				INFOPLIST_FILE = "SwiftJavaScriptCore-JSExport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.SwiftJavaScriptCore-JSExport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		184B4D0E1F03EAD800C1E939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U66QWACWTN;
+				INFOPLIST_FILE = "Swift-JSManagedValue/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.Swift-JSManagedValue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		184B4D0F1F03EAD800C1E939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U66QWACWTN;
+				INFOPLIST_FILE = "Swift-JSManagedValue/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.Swift-JSManagedValue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		184B4D261F03F9DD00C1E939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U66QWACWTN;
+				INFOPLIST_FILE = "JSExport实现JS对系统对象的调用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.JSExport--JS--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		184B4D271F03F9DD00C1E939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U66QWACWTN;
+				INFOPLIST_FILE = "JSExport实现JS对系统对象的调用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.JSExport--JS--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183593F31F038FE5009D12F8 /* Build configuration list for PBXProject "SwiftJavaScriptCore-JSExport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183594081F038FE5009D12F8 /* Debug */,
+				183594091F038FE5009D12F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1835940A1F038FE5009D12F8 /* Build configuration list for PBXNativeTarget "SwiftJavaScriptCore-JSExport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1835940B1F038FE5009D12F8 /* Debug */,
+				1835940C1F038FE5009D12F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184B4D0D1F03EAD800C1E939 /* Build configuration list for PBXNativeTarget "Swift-JSManagedValue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184B4D0E1F03EAD800C1E939 /* Debug */,
+				184B4D0F1F03EAD800C1E939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184B4D251F03F9DD00C1E939 /* Build configuration list for PBXNativeTarget "JSExport实现JS对系统对象的调用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184B4D261F03F9DD00C1E939 /* Debug */,
+				184B4D271F03F9DD00C1E939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 183593F01F038FE5009D12F8 /* Project object */;
+}

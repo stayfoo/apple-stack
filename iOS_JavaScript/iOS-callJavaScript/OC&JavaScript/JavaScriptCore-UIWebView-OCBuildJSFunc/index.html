@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScriptCore</title>
+    <script>
+        function showAlert(content) {
+            asyncAlert(content);
+            document.getElementById("js-iOS-js-argsValue").value = document.getElementById("js-iOS-js-argsValue").value + content;
+            document.getElementById("js-iOS-js-argsValue").value += content;
+        }
+        function asyncAlert(content) {
+            setTimeout(function(){ alert(content); }, 1);
+        }
+    </script>
+</head>
+<body>
+    <h1>这是按钮调用</h1>
+    <input id='jsBtn' type="button" style="width:300px;height:50px;" value="点击Html按钮，调用OC/Swift要执行的代码，&#13;&#10;接收JS传递给OC/Swift的参数" onclick="handleJSToiOS('触发了Html中标签的点击事件，触发JS函数调用，js->OC/Swift->JS')" />
+    <br/>
+    <br/>
+    <textarea id ="js-iOS-js-argsValue" type="value" rows="5" cols="50">
+
+</body>
+</html>
