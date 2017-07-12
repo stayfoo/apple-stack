@@ -17,6 +17,13 @@
 
 参看我的[博客: www.mengyueping.com](http://www.mengyueping.com/categories/iOS/JavaScriptCore/)
 
+> [iOS_JavaScript](./iOS_iOS-keyChain-IDFV)
+一些关于`iOS`设备`ID`，与`keychain`存储经验，解决问题包括：
+* `UDID`、`MAC地址`、`UUID`、`IDFV`、`keychain`、`IDFA`能作为设备的唯一标识吗？
+* 如何使用`IDFV`和`keychain`来标识安装`App`的设备？
+* 如何来标识本公司所有`App`安装的设备？记录用户应用使用习惯？
+* 用哪种`ID`追踪某一台设备是否在下载过某个应用?
+
 >- [iOS_OC](./iOS_OC)
 
 >- [iOS_Swift](./iOS_Swift)
