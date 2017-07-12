@@ -6,6 +6,17 @@
 //  Copyright © 2017年 MengYP. All rights reserved.
 //
 
+/*
+ swift中的闭包和OC中的block非常类似
+ 
+ block
+ 1.预先准备好的一段可执行的代码
+ 2.可以当做参数传递
+ 3.在需要的时候执行block
+ 4.block中使用 self  需要注意循环引用  但是一定会引起循环引用?
+ */
+
+
 import UIKit
 
 class ViewController: UIViewController {

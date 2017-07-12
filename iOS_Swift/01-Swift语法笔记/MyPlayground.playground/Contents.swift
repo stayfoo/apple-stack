@@ -1,6 +1,9 @@
+/// ![Image](http://www.nlc.cn/gtgkk/201508/W020150806388364783665.jpg)
+//
 //: Playground - noun: a place where people can play
 
 import UIKit
+
 
 var str = "Hello, playground"
 print(str)
