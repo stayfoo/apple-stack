@@ -37,6 +37,13 @@
 
 具体可参看我的[博客: www.mengyueping.com](http://www.mengyueping.com/2017/07/17/iOS-runtime-archive/)
 
+> [iOS-runtime-methodExchange](https://github.com/MengYP/apple-stack/tree/master/iOS_runtime-methodExchange)
+
+使用Runtime对系统方法实现方法交换
+* 如何对系统方法进行添加功能，在不修改原有方法调用的基础之上？
+* 项目中已经大量使用了字符串转`URL`的调用，调用的系统方法，而没有对字符串进行转码，这样如果字符串中出现中文的话会导致`URL`转换失败的情况，那么如何不大量修改原项目中代码，来实现对`URL`的转码以及判空？
+
+具体可参看我的[博客: www.mengyueping.com](http://www.mengyueping.com/2017/07/18/iOS-runtime-methodExchange/)
 
 >- [iOS_Swift](./iOS_Swift)
 
