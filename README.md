@@ -18,7 +18,7 @@
 
 具体可参看我的[博客: www.mengyueping.com](http://www.mengyueping.com/categories/iOS/JavaScriptCore/)
 
-> [iOS-keyChain-IDFV](./iOS_keyChain-IDFV/OC-KeyChain-IDFV)
+> [iOS-keyChain-IDFV](https://github.com/MengYP/apple-stack/tree/master/iOS_KeyChain-IDFV/OC-KeyChain-IDFV)
 
 一些关于`iOS`设备`ID`，与`keychain`存储经验，解决问题包括：
 * `UDID`、`MAC地址`、`UUID`、`IDFV`、`keychain`、`IDFA`能作为设备的唯一标识吗？
@@ -28,7 +28,7 @@
 
 具体可参看我的[博客: www.mengyueping.com](http://www.mengyueping.com/2017/07/12/iOS-keyChain-IDFV/)
 
-> [iOS-runtime-archive](./iOS-runtime-archive)
+> [iOS-runtime-archive](https://github.com/MengYP/apple-stack/tree/master/iOS_runtime-archive)
 
 使用`runtime`进行归档解档：
 * 不使用`runtime`情况下，**归档/解档**有什么缺点？
