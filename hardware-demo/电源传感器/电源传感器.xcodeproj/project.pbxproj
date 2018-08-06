@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18DA97391DBA6DE200E4EF5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA97381DBA6DE200E4EF5A /* main.m */; };
+		18DA973C1DBA6DE200E4EF5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA973B1DBA6DE200E4EF5A /* AppDelegate.m */; };
+		18DA973F1DBA6DE200E4EF5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA973E1DBA6DE200E4EF5A /* ViewController.m */; };
+		18DA97421DBA6DE200E4EF5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DA97401DBA6DE200E4EF5A /* Main.storyboard */; };
+		18DA97441DBA6DE200E4EF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DA97431DBA6DE200E4EF5A /* Assets.xcassets */; };
+		18DA97471DBA6DE200E4EF5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DA97451DBA6DE200E4EF5A /* LaunchScreen.storyboard */; };
+		18DA97521DBA6DE200E4EF5A /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA97511DBA6DE200E4EF5A /* _____Tests.m */; };
+		18DA975D1DBA6DE200E4EF5A /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA975C1DBA6DE200E4EF5A /* _____UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18DA974E1DBA6DE200E4EF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18DA972C1DBA6DE200E4EF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18DA97331DBA6DE200E4EF5A;
+			remoteInfo = "电源传感器";
+		};
+		18DA97591DBA6DE200E4EF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18DA972C1DBA6DE200E4EF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18DA97331DBA6DE200E4EF5A;
+			remoteInfo = "电源传感器";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18DA97341DBA6DE200E4EF5A /* 电源传感器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电源传感器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DA97381DBA6DE200E4EF5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18DA973A1DBA6DE200E4EF5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18DA973B1DBA6DE200E4EF5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18DA973D1DBA6DE200E4EF5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18DA973E1DBA6DE200E4EF5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18DA97411DBA6DE200E4EF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18DA97431DBA6DE200E4EF5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18DA97461DBA6DE200E4EF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18DA97481DBA6DE200E4EF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DA974D1DBA6DE200E4EF5A /* 电源传感器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "电源传感器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DA97511DBA6DE200E4EF5A /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		18DA97531DBA6DE200E4EF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DA97581DBA6DE200E4EF5A /* 电源传感器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "电源传感器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DA975C1DBA6DE200E4EF5A /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
+		18DA975E1DBA6DE200E4EF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18DA97311DBA6DE200E4EF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA974A1DBA6DE200E4EF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA97551DBA6DE200E4EF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18DA972B1DBA6DE200E4EF5A = {
+			isa = PBXGroup;
+			children = (
+				18DA97361DBA6DE200E4EF5A /* 电源传感器 */,
+				18DA97501DBA6DE200E4EF5A /* 电源传感器Tests */,
+				18DA975B1DBA6DE200E4EF5A /* 电源传感器UITests */,
+				18DA97351DBA6DE200E4EF5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18DA97351DBA6DE200E4EF5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18DA97341DBA6DE200E4EF5A /* 电源传感器.app */,
+				18DA974D1DBA6DE200E4EF5A /* 电源传感器Tests.xctest */,
+				18DA97581DBA6DE200E4EF5A /* 电源传感器UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18DA97361DBA6DE200E4EF5A /* 电源传感器 */ = {
+			isa = PBXGroup;
+			children = (
+				18DA973A1DBA6DE200E4EF5A /* AppDelegate.h */,
+				18DA973B1DBA6DE200E4EF5A /* AppDelegate.m */,
+				18DA973D1DBA6DE200E4EF5A /* ViewController.h */,
+				18DA973E1DBA6DE200E4EF5A /* ViewController.m */,
+				18DA97401DBA6DE200E4EF5A /* Main.storyboard */,
+				18DA97431DBA6DE200E4EF5A /* Assets.xcassets */,
+				18DA97451DBA6DE200E4EF5A /* LaunchScreen.storyboard */,
+				18DA97481DBA6DE200E4EF5A /* Info.plist */,
+				18DA97371DBA6DE200E4EF5A /* Supporting Files */,
+			);
+			path = "电源传感器";
+			sourceTree = "<group>";
+		};
+		18DA97371DBA6DE200E4EF5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18DA97381DBA6DE200E4EF5A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18DA97501DBA6DE200E4EF5A /* 电源传感器Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18DA97511DBA6DE200E4EF5A /* _____Tests.m */,
+				18DA97531DBA6DE200E4EF5A /* Info.plist */,
+			);
+			path = "电源传感器Tests";
+			sourceTree = "<group>";
+		};
+		18DA975B1DBA6DE200E4EF5A /* 电源传感器UITests */ = {
+			isa = PBXGroup;
+			children = (
+				18DA975C1DBA6DE200E4EF5A /* _____UITests.m */,
+				18DA975E1DBA6DE200E4EF5A /* Info.plist */,
+			);
+			path = "电源传感器UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18DA97331DBA6DE200E4EF5A /* 电源传感器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DA97611DBA6DE200E4EF5A /* Build configuration list for PBXNativeTarget "电源传感器" */;
+			buildPhases = (
+				18DA97301DBA6DE200E4EF5A /* Sources */,
+				18DA97311DBA6DE200E4EF5A /* Frameworks */,
+				18DA97321DBA6DE200E4EF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "电源传感器";
+			productName = "电源传感器";
+			productReference = 18DA97341DBA6DE200E4EF5A /* 电源传感器.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18DA974C1DBA6DE200E4EF5A /* 电源传感器Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DA97641DBA6DE200E4EF5A /* Build configuration list for PBXNativeTarget "电源传感器Tests" */;
+			buildPhases = (
+				18DA97491DBA6DE200E4EF5A /* Sources */,
+				18DA974A1DBA6DE200E4EF5A /* Frameworks */,
+				18DA974B1DBA6DE200E4EF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18DA974F1DBA6DE200E4EF5A /* PBXTargetDependency */,
+			);
+			name = "电源传感器Tests";
+			productName = "电源传感器Tests";
+			productReference = 18DA974D1DBA6DE200E4EF5A /* 电源传感器Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18DA97571DBA6DE200E4EF5A /* 电源传感器UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DA97671DBA6DE200E4EF5A /* Build configuration list for PBXNativeTarget "电源传感器UITests" */;
+			buildPhases = (
+				18DA97541DBA6DE200E4EF5A /* Sources */,
+				18DA97551DBA6DE200E4EF5A /* Frameworks */,
+				18DA97561DBA6DE200E4EF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18DA975A1DBA6DE200E4EF5A /* PBXTargetDependency */,
+			);
+			name = "电源传感器UITests";
+			productName = "电源传感器UITests";
+			productReference = 18DA97581DBA6DE200E4EF5A /* 电源传感器UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18DA972C1DBA6DE200E4EF5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = MengYP;
+				TargetAttributes = {
+					18DA97331DBA6DE200E4EF5A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTHT7N29E5;
+						ProvisioningStyle = Automatic;
+					};
+					18DA974C1DBA6DE200E4EF5A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTHT7N29E5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18DA97331DBA6DE200E4EF5A;
+					};
+					18DA97571DBA6DE200E4EF5A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTHT7N29E5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18DA97331DBA6DE200E4EF5A;
+					};
+				};
+			};
+			buildConfigurationList = 18DA972F1DBA6DE200E4EF5A /* Build configuration list for PBXProject "电源传感器" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18DA972B1DBA6DE200E4EF5A;
+			productRefGroup = 18DA97351DBA6DE200E4EF5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18DA97331DBA6DE200E4EF5A /* 电源传感器 */,
+				18DA974C1DBA6DE200E4EF5A /* 电源传感器Tests */,
+				18DA97571DBA6DE200E4EF5A /* 电源传感器UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18DA97321DBA6DE200E4EF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DA97471DBA6DE200E4EF5A /* LaunchScreen.storyboard in Resources */,
+				18DA97441DBA6DE200E4EF5A /* Assets.xcassets in Resources */,
+				18DA97421DBA6DE200E4EF5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA974B1DBA6DE200E4EF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA97561DBA6DE200E4EF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18DA97301DBA6DE200E4EF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DA973F1DBA6DE200E4EF5A /* ViewController.m in Sources */,
+				18DA973C1DBA6DE200E4EF5A /* AppDelegate.m in Sources */,
+				18DA97391DBA6DE200E4EF5A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA97491DBA6DE200E4EF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DA97521DBA6DE200E4EF5A /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA97541DBA6DE200E4EF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DA975D1DBA6DE200E4EF5A /* _____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18DA974F1DBA6DE200E4EF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18DA97331DBA6DE200E4EF5A /* 电源传感器 */;
+			targetProxy = 18DA974E1DBA6DE200E4EF5A /* PBXContainerItemProxy */;
+		};
+		18DA975A1DBA6DE200E4EF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18DA97331DBA6DE200E4EF5A /* 电源传感器 */;
+			targetProxy = 18DA97591DBA6DE200E4EF5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18DA97401DBA6DE200E4EF5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DA97411DBA6DE200E4EF5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18DA97451DBA6DE200E4EF5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DA97461DBA6DE200E4EF5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18DA975F1DBA6DE200E4EF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18DA97601DBA6DE200E4EF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18DA97621DBA6DE200E4EF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "电源传感器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18DA97631DBA6DE200E4EF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "电源传感器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18DA97651DBA6DE200E4EF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "电源传感器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/电源传感器.app/电源传感器";
+			};
+			name = Debug;
+		};
+		18DA97661DBA6DE200E4EF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "电源传感器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/电源传感器.app/电源传感器";
+			};
+			name = Release;
+		};
+		18DA97681DBA6DE200E4EF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "电源传感器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "电源传感器";
+			};
+			name = Debug;
+		};
+		18DA97691DBA6DE200E4EF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "电源传感器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "电源传感器";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18DA972F1DBA6DE200E4EF5A /* Build configuration list for PBXProject "电源传感器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DA975F1DBA6DE200E4EF5A /* Debug */,
+				18DA97601DBA6DE200E4EF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18DA97611DBA6DE200E4EF5A /* Build configuration list for PBXNativeTarget "电源传感器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DA97621DBA6DE200E4EF5A /* Debug */,
+				18DA97631DBA6DE200E4EF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18DA97641DBA6DE200E4EF5A /* Build configuration list for PBXNativeTarget "电源传感器Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DA97651DBA6DE200E4EF5A /* Debug */,
+				18DA97661DBA6DE200E4EF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18DA97671DBA6DE200E4EF5A /* Build configuration list for PBXNativeTarget "电源传感器UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DA97681DBA6DE200E4EF5A /* Debug */,
+				18DA97691DBA6DE200E4EF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18DA972C1DBA6DE200E4EF5A /* Project object */;
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="point_bg" translatesAutoresizingMaskIntoConstraints="NO" id="1X7-fy-dBr">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1X7-fy-dBr" secondAttribute="height" multiplier="1:1" id="fsA-ox-76b"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="point" translatesAutoresizingMaskIntoConstraints="NO" id="lLl-Kg-SAN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="RKd-4C-7kQ"/>
+                                    <constraint firstAttribute="height" constant="244" id="kxL-99-g2D"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lLl-Kg-SAN" firstAttribute="centerX" secondItem="1X7-fy-dBr" secondAttribute="centerX" id="54G-fw-OML"/>
+                            <constraint firstItem="1X7-fy-dBr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="9W3-0s-ehB"/>
+                            <constraint firstItem="lLl-Kg-SAN" firstAttribute="centerY" secondItem="1X7-fy-dBr" secondAttribute="centerY" id="TEB-yQ-cgz"/>
+                            <constraint firstItem="1X7-fy-dBr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aIM-tL-8UF"/>
+                            <constraint firstItem="lLl-Kg-SAN" firstAttribute="centerX" secondItem="1X7-fy-dBr" secondAttribute="centerX" id="mDU-hp-mrY"/>
+                            <constraint firstAttribute="trailing" secondItem="1X7-fy-dBr" secondAttribute="trailing" id="qp8-FH-aZE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pointImageView" destination="lLl-Kg-SAN" id="M6l-Zh-eyi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="point" width="328" height="327"/>
+        <image name="point_bg" width="262" height="262"/>
+    </resources>
+</document>

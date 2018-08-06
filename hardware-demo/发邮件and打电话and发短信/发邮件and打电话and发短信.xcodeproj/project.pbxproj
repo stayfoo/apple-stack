@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18DA98CB1DBA823600E4EF5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA98CA1DBA823600E4EF5A /* main.m */; };
+		18DA98CE1DBA823600E4EF5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA98CD1DBA823600E4EF5A /* AppDelegate.m */; };
+		18DA98D11DBA823600E4EF5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA98D01DBA823600E4EF5A /* ViewController.m */; };
+		18DA98D41DBA823600E4EF5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DA98D21DBA823600E4EF5A /* Main.storyboard */; };
+		18DA98D61DBA823600E4EF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DA98D51DBA823600E4EF5A /* Assets.xcassets */; };
+		18DA98D91DBA823600E4EF5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DA98D71DBA823600E4EF5A /* LaunchScreen.storyboard */; };
+		18DA98E41DBA823600E4EF5A /* ___and___and___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA98E31DBA823600E4EF5A /* ___and___and___Tests.m */; };
+		18DA98EF1DBA823600E4EF5A /* ___and___and___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA98EE1DBA823600E4EF5A /* ___and___and___UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18DA98E01DBA823600E4EF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18DA98BE1DBA823600E4EF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18DA98C51DBA823600E4EF5A;
+			remoteInfo = "发邮件and打电话and发短信";
+		};
+		18DA98EB1DBA823600E4EF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18DA98BE1DBA823600E4EF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18DA98C51DBA823600E4EF5A;
+			remoteInfo = "发邮件and打电话and发短信";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18DA98C61DBA823600E4EF5A /* 发邮件and打电话and发短信.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "发邮件and打电话and发短信.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DA98CA1DBA823600E4EF5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18DA98CC1DBA823600E4EF5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18DA98CD1DBA823600E4EF5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18DA98CF1DBA823600E4EF5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18DA98D01DBA823600E4EF5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18DA98D31DBA823600E4EF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18DA98D51DBA823600E4EF5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18DA98D81DBA823600E4EF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18DA98DA1DBA823600E4EF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DA98DF1DBA823600E4EF5A /* 发邮件and打电话and发短信Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "发邮件and打电话and发短信Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DA98E31DBA823600E4EF5A /* ___and___and___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___and___and___Tests.m"; sourceTree = "<group>"; };
+		18DA98E51DBA823600E4EF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DA98EA1DBA823600E4EF5A /* 发邮件and打电话and发短信UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "发邮件and打电话and发短信UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DA98EE1DBA823600E4EF5A /* ___and___and___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___and___and___UITests.m"; sourceTree = "<group>"; };
+		18DA98F01DBA823600E4EF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18DA98C31DBA823600E4EF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA98DC1DBA823600E4EF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA98E71DBA823600E4EF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18DA98BD1DBA823600E4EF5A = {
+			isa = PBXGroup;
+			children = (
+				18DA98C81DBA823600E4EF5A /* 发邮件and打电话and发短信 */,
+				18DA98E21DBA823600E4EF5A /* 发邮件and打电话and发短信Tests */,
+				18DA98ED1DBA823600E4EF5A /* 发邮件and打电话and发短信UITests */,
+				18DA98C71DBA823600E4EF5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18DA98C71DBA823600E4EF5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18DA98C61DBA823600E4EF5A /* 发邮件and打电话and发短信.app */,
+				18DA98DF1DBA823600E4EF5A /* 发邮件and打电话and发短信Tests.xctest */,
+				18DA98EA1DBA823600E4EF5A /* 发邮件and打电话and发短信UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18DA98C81DBA823600E4EF5A /* 发邮件and打电话and发短信 */ = {
+			isa = PBXGroup;
+			children = (
+				18DA98CC1DBA823600E4EF5A /* AppDelegate.h */,
+				18DA98CD1DBA823600E4EF5A /* AppDelegate.m */,
+				18DA98CF1DBA823600E4EF5A /* ViewController.h */,
+				18DA98D01DBA823600E4EF5A /* ViewController.m */,
+				18DA98DA1DBA823600E4EF5A /* Info.plist */,
+				18DA98D21DBA823600E4EF5A /* Main.storyboard */,
+				18DA98D51DBA823600E4EF5A /* Assets.xcassets */,
+				18DA98D71DBA823600E4EF5A /* LaunchScreen.storyboard */,
+				18DA98C91DBA823600E4EF5A /* Supporting Files */,
+			);
+			path = "发邮件and打电话and发短信";
+			sourceTree = "<group>";
+		};
+		18DA98C91DBA823600E4EF5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18DA98CA1DBA823600E4EF5A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18DA98E21DBA823600E4EF5A /* 发邮件and打电话and发短信Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18DA98E31DBA823600E4EF5A /* ___and___and___Tests.m */,
+				18DA98E51DBA823600E4EF5A /* Info.plist */,
+			);
+			path = "发邮件and打电话and发短信Tests";
+			sourceTree = "<group>";
+		};
+		18DA98ED1DBA823600E4EF5A /* 发邮件and打电话and发短信UITests */ = {
+			isa = PBXGroup;
+			children = (
+				18DA98EE1DBA823600E4EF5A /* ___and___and___UITests.m */,
+				18DA98F01DBA823600E4EF5A /* Info.plist */,
+			);
+			path = "发邮件and打电话and发短信UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18DA98C51DBA823600E4EF5A /* 发邮件and打电话and发短信 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DA98F31DBA823600E4EF5A /* Build configuration list for PBXNativeTarget "发邮件and打电话and发短信" */;
+			buildPhases = (
+				18DA98C21DBA823600E4EF5A /* Sources */,
+				18DA98C31DBA823600E4EF5A /* Frameworks */,
+				18DA98C41DBA823600E4EF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "发邮件and打电话and发短信";
+			productName = "发邮件and打电话and发短信";
+			productReference = 18DA98C61DBA823600E4EF5A /* 发邮件and打电话and发短信.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18DA98DE1DBA823600E4EF5A /* 发邮件and打电话and发短信Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DA98F61DBA823600E4EF5A /* Build configuration list for PBXNativeTarget "发邮件and打电话and发短信Tests" */;
+			buildPhases = (
+				18DA98DB1DBA823600E4EF5A /* Sources */,
+				18DA98DC1DBA823600E4EF5A /* Frameworks */,
+				18DA98DD1DBA823600E4EF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18DA98E11DBA823600E4EF5A /* PBXTargetDependency */,
+			);
+			name = "发邮件and打电话and发短信Tests";
+			productName = "发邮件and打电话and发短信Tests";
+			productReference = 18DA98DF1DBA823600E4EF5A /* 发邮件and打电话and发短信Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18DA98E91DBA823600E4EF5A /* 发邮件and打电话and发短信UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DA98F91DBA823600E4EF5A /* Build configuration list for PBXNativeTarget "发邮件and打电话and发短信UITests" */;
+			buildPhases = (
+				18DA98E61DBA823600E4EF5A /* Sources */,
+				18DA98E71DBA823600E4EF5A /* Frameworks */,
+				18DA98E81DBA823600E4EF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18DA98EC1DBA823600E4EF5A /* PBXTargetDependency */,
+			);
+			name = "发邮件and打电话and发短信UITests";
+			productName = "发邮件and打电话and发短信UITests";
+			productReference = 18DA98EA1DBA823600E4EF5A /* 发邮件and打电话and发短信UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18DA98BE1DBA823600E4EF5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = MengYP;
+				TargetAttributes = {
+					18DA98C51DBA823600E4EF5A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTHT7N29E5;
+						ProvisioningStyle = Automatic;
+					};
+					18DA98DE1DBA823600E4EF5A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTHT7N29E5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18DA98C51DBA823600E4EF5A;
+					};
+					18DA98E91DBA823600E4EF5A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTHT7N29E5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18DA98C51DBA823600E4EF5A;
+					};
+				};
+			};
+			buildConfigurationList = 18DA98C11DBA823600E4EF5A /* Build configuration list for PBXProject "发邮件and打电话and发短信" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18DA98BD1DBA823600E4EF5A;
+			productRefGroup = 18DA98C71DBA823600E4EF5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18DA98C51DBA823600E4EF5A /* 发邮件and打电话and发短信 */,
+				18DA98DE1DBA823600E4EF5A /* 发邮件and打电话and发短信Tests */,
+				18DA98E91DBA823600E4EF5A /* 发邮件and打电话and发短信UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18DA98C41DBA823600E4EF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DA98D91DBA823600E4EF5A /* LaunchScreen.storyboard in Resources */,
+				18DA98D61DBA823600E4EF5A /* Assets.xcassets in Resources */,
+				18DA98D41DBA823600E4EF5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA98DD1DBA823600E4EF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA98E81DBA823600E4EF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18DA98C21DBA823600E4EF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DA98D11DBA823600E4EF5A /* ViewController.m in Sources */,
+				18DA98CE1DBA823600E4EF5A /* AppDelegate.m in Sources */,
+				18DA98CB1DBA823600E4EF5A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA98DB1DBA823600E4EF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DA98E41DBA823600E4EF5A /* ___and___and___Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DA98E61DBA823600E4EF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DA98EF1DBA823600E4EF5A /* ___and___and___UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18DA98E11DBA823600E4EF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18DA98C51DBA823600E4EF5A /* 发邮件and打电话and发短信 */;
+			targetProxy = 18DA98E01DBA823600E4EF5A /* PBXContainerItemProxy */;
+		};
+		18DA98EC1DBA823600E4EF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18DA98C51DBA823600E4EF5A /* 发邮件and打电话and发短信 */;
+			targetProxy = 18DA98EB1DBA823600E4EF5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18DA98D21DBA823600E4EF5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DA98D31DBA823600E4EF5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18DA98D71DBA823600E4EF5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DA98D81DBA823600E4EF5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18DA98F11DBA823600E4EF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18DA98F21DBA823600E4EF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18DA98F41DBA823600E4EF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "发邮件and打电话and发短信/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.---and---and---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18DA98F51DBA823600E4EF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "发邮件and打电话and发短信/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.---and---and---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18DA98F71DBA823600E4EF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "发邮件and打电话and发短信Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.---and---and---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/发邮件and打电话and发短信.app/发邮件and打电话and发短信";
+			};
+			name = Debug;
+		};
+		18DA98F81DBA823600E4EF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "发邮件and打电话and发短信Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.---and---and---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/发邮件and打电话and发短信.app/发邮件and打电话and发短信";
+			};
+			name = Release;
+		};
+		18DA98FA1DBA823600E4EF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "发邮件and打电话and发短信UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.---and---and---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "发邮件and打电话and发短信";
+			};
+			name = Debug;
+		};
+		18DA98FB1DBA823600E4EF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HTHT7N29E5;
+				INFOPLIST_FILE = "发邮件and打电话and发短信UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mengyueping.www.---and---and---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "发邮件and打电话and发短信";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18DA98C11DBA823600E4EF5A /* Build configuration list for PBXProject "发邮件and打电话and发短信" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DA98F11DBA823600E4EF5A /* Debug */,
+				18DA98F21DBA823600E4EF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18DA98F31DBA823600E4EF5A /* Build configuration list for PBXNativeTarget "发邮件and打电话and发短信" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DA98F41DBA823600E4EF5A /* Debug */,
+				18DA98F51DBA823600E4EF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18DA98F61DBA823600E4EF5A /* Build configuration list for PBXNativeTarget "发邮件and打电话and发短信Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DA98F71DBA823600E4EF5A /* Debug */,
+				18DA98F81DBA823600E4EF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18DA98F91DBA823600E4EF5A /* Build configuration list for PBXNativeTarget "发邮件and打电话and发短信UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DA98FA1DBA823600E4EF5A /* Debug */,
+				18DA98FB1DBA823600E4EF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18DA98BE1DBA823600E4EF5A /* Project object */;
+}
